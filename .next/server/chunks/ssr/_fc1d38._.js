@@ -257,12 +257,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$utils$2f$ScrollToTopButton$2
 ;
 ;
 const metadata = {
-    title: "Aaron Franceschi | Full Stack Developer & AI Product Specialist",
-    description: "Explore the portfolio of Aaron Franceschi, a Professional Full Stack Developer specializing in Next.js, AI Product Specialist, and modern web solutions. Built for performance and user experience.",
+    title: "Aaron Franceschi | Full Stack Developer & AI Product  Specialist",
+    description: "Explore the portfolio of Aaron Franceschi, a Professional Full Stack Developer specializing in Next.js, AI Automation, and modern web solutions. Built for performance and user experience.",
     keywords: [
         "Aaron Franceschi",
         "Full Stack Developer",
-        "Next.js Developer",
+        "Next.js Portfolio",
         "AI Product Specialist",
         "Software Engineer",
         "React Developer"
@@ -274,8 +274,8 @@ const metadata = {
     ],
     openGraph: {
         title: "Aaron Franceschi | Personal Portfolio",
-        description: "Full Stack Developer & AI Automation Expert — Building the future of the web.",
-        url: "https://aaron-portfolio.vercel.app",
+        description: "Full Stack Developer & AI Product Specialist — Building the future of the web.",
+        url: "https://aaronfranceschi.vercel.app",
         siteName: "Aaron Franceschi Portfolio",
         images: [
             {
@@ -291,7 +291,7 @@ const metadata = {
     twitter: {
         card: "summary_large_image",
         title: "Aaron Franceschi | Full Stack Developer",
-        description: "Building modern web applications and AI automations.",
+        description: "Building scalable AI-powered web applications.",
         images: [
             "/Website-overview.png"
         ]

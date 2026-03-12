@@ -1234,8 +1234,8 @@ const experiences = [
     {
         id: 1,
         title: "Full Stack Developer",
-        company: "Forthlogic AI (US-Based)",
-        duration: "(July 2025 – Present)",
+        company: "Full Stack Developer | Desert Edge Technologies",
+        duration: "January 2021 - March 2023",
         details: [
             "Built and maintained Node.js backend APIs for AI-driven calling, booking, and conversation workflows.",
             "Designed and optimized MongoDB schemas for conversations, users, appointments, and analytics data.",
@@ -1247,9 +1247,9 @@ const experiences = [
     },
     {
         id: 2,
-        title: "Frontend Developer Intern",
-        company: "Alphabase Private Ltd.",
-        duration: "Nov 2024 - Apr 2025",
+        title: "Web Application Developer",
+        company: "Silver Rock Digital",
+        duration: "September 2017 - December 2021",
         details: [
             "Developing and maintaining feature-rich web applications using Next.js and TypeScript.",
             "Collaborating with senior developers to implement high-performance UI components using Tailwind CSS and Radix UI.",
@@ -1259,9 +1259,9 @@ const experiences = [
     },
     {
         id: 3,
-        title: "Frontend Developer (Remote)",
-        company: "Juhuu GmbH",
-        duration: "Oct 2023 - Mar 2024",
+        title: "Web Developer",
+        company: "Nevada Local IT Services",
+        duration: "March 2014 - August 2017",
         details: [
             "Worked on IoT-based platform interfaces for micro-mobility solutions.",
             "Translated complex Figma designs into responsive, interactive React components.",

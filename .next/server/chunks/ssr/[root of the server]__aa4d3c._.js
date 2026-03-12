@@ -12,7 +12,7 @@ module.exports = mod;
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: __turbopack_require_real__ } = __turbopack_context__;
 {
-__turbopack_export_value__("/_next/static/media/logo.1bb84655.png");}}),
+__turbopack_export_value__("/_next/static/media/logo.226e25c4.png");}}),
 "[project]/public/logo.png.mjs { IMAGE => \"[project]/public/logo.png [app-ssr] (static)\" } [app-ssr] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -25,11 +25,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$logo$2e$png__$5b$a
 ;
 const __TURBOPACK__default__export__ = {
     src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$logo$2e$png__$5b$app$2d$ssr$5d$__$28$static$29$__["default"],
-    width: 1562,
-    height: 1092,
-    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAYAAAD+Bd/7AAAAf0lEQVR42lXMsQrDIBSFYedulUKXlvbVuta5i49QhNroliEOUQgEl0hcMsfXyrlDQvKBID+HyxhcoQIppaJHf2ps9QTnXNNBSmmIMfZIj8PAe99OUEqZjTF/zvn5MMg5jyEEr7X+KaW+d9gGFxBCvGugK9baihrbO8ELPnCDtS9A2DlLPSdDmAAAAABJRU5ErkJggg==",
+    width: 512,
+    height: 512,
+    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAzklEQVR42k2POwuBARSGP4wWJVIWEYuUhGRSSpmUQkqRSxYlIbJYREwWIovIJaXEIlkUilIMkix2P+L1XfmGdzjneeq8hyBUng+h9oGLUOOHgAw9U4wPdc406p0FstUBxPoQs+egzBxDZ7RBrjbE+faCwZ39CxQsNkaYr0+IFtrYne5QO1KMQN10hSu4Pt6odxfoTbcYL/eQmqJMF8pSWBM4Xp6weUsoN2eYrA6I5FsQaQOMIDFGkKn0IbfE4QiW6ZJKe5LtwL75e40fkn0BuUt9YpZS1W8AAAAASUVORK5CYII=",
     blurWidth: 8,
-    blurHeight: 6
+    blurHeight: 8
 };
 }}),
 "[externals]/next/dist/server/app-render/action-async-storage.external.js [external] (next/dist/server/app-render/action-async-storage.external.js, cjs)": (function(__turbopack_context__) {
@@ -289,7 +289,7 @@ __turbopack_esm__({
     "personalData": (()=>personalData)
 });
 const personalData = {
-    name: "Aaron Franceschi",
+    name: "Aaron Franceshci",
     profile: "/pic3.jpg",
     designation: "Full-Stack Web",
     designationAlternateWords: [
@@ -299,19 +299,19 @@ const personalData = {
         "Innovator.",
         "Designer."
     ],
-    description: "I’m Aaron Franceschi, a dedicated Full-Stack Developer specializing in TypeScript and crafting responsive, user‑centric interfaces with React and Next.js. I build full‑stack websites using Next.js and Prisma—leveraging Prisma’s type‑safe ORM to integrate robust database layers seamlessly into my applications. Passionate about continuous learning, I stay at the forefront of emerging technologies to deliver scalable, maintainable solutions that exceed expectations.",
-    email: "franceschiaaron1012@gmail.com",
-    phone: "+1 (702) 452 4845",
+    description: "I’m Aaron Franceshci, a dedicated Full-Stack Developer specializing in TypeScript and crafting responsive, user‑centric interfaces with React and Next.js. I build full‑stack websites using Next.js and Prisma—leveraging Prisma’s type‑safe ORM to integrate robust database layers seamlessly into my applications. Passionate about continuous learning, I stay at the forefront of emerging technologies to deliver scalable, maintainable solutions that exceed expectations.",
+    email: "aaronfranceschi@gmail.com",
+    phone: "+1 (555) 123-4567",
     address: "Las Vegas, NV, USA",
     github: "https://github.com/aaronfranceschi",
-    facebook: "https://www.facebook.com/profile.php?id=100092595303195",
-    Instagram: "https://www.instagram.com/captain_ghost005",
+    facebook: "https://www.facebook.com/aaron.franceshci",
+    Instagram: "https://www.instagram.com/aaronfranceschi",
     linkedIn: "https://www.linkedin.com/in/aaronfranceschi/",
-    twitter: "https://twitter.com/Ghost_oo5",
-    stackOverflow: "https://stackoverflow.com/users/15349472/captain-ghost",
+    twitter: "https://twitter.com/aaronfranceschi",
+    stackOverflow: "https://stackoverflow.com/users/15349472/aaronfranceschi",
     devUsername: "aaronfranceschi",
-    leetcode: "https://leetcode.com/u/rajaaaronfranceschi/",
-    resume: "https://drive.google.com/file/d/1Tmt"
+    leetcode: "https://leetcode.com/u/aaronfranceschi/",
+    resume: "https://drive.google.com/file/d/1TmtDCIlCaZJ4b0npzjwsdDtxiOWwye23/view?usp=drive_link"
 };
 }}),
 "[project]/src/app/components/Footer.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
@@ -574,39 +574,18 @@ const Footer = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            children: [
-                                "© ",
-                                new Date().getFullYear(),
-                                " Aaron Franceschi. All rights reserved."
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/app/components/Footer.tsx",
-                            lineNumber: 113,
-                            columnNumber: 9
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "flex items-center gap-2",
-                            children: [
-                                "Made with ",
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-red-600 animate-pulse",
-                                    children: "❤️"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/components/Footer.tsx",
-                                    lineNumber: 117,
-                                    columnNumber: 21
-                                }, this),
-                                " in Pakistan"
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/app/components/Footer.tsx",
-                            lineNumber: 116,
-                            columnNumber: 9
-                        }, this)
-                    ]
-                }, void 0, true, {
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        children: [
+                            "© ",
+                            new Date().getFullYear(),
+                            " Aaron Franceschi. All rights reserved."
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/components/Footer.tsx",
+                        lineNumber: 113,
+                        columnNumber: 9
+                    }, this)
+                }, void 0, false, {
                     fileName: "[project]/src/app/components/Footer.tsx",
                     lineNumber: 112,
                     columnNumber: 7

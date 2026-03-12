@@ -113,10 +113,6 @@ const Footer = () => (
         <p>
           &copy; {new Date().getFullYear()} Aaron Franceschi. All rights reserved.
         </p>
-        <p className="flex items-center gap-2">
-          Made with <span className="text-red-600 animate-pulse">❤️</span> in
-          Pakistan
-        </p>
       </div>
     </div>
   </footer>
