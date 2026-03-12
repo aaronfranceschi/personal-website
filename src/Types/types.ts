@@ -9,7 +9,7 @@ export interface GlowCardProps {
   identifier: string;
 }
 interface Project {
-  id: number;
+  id: string;
   name: string;
   tools: string[];
   role: string;
