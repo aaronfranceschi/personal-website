@@ -2953,7 +2953,6 @@ const ProjectCard = ({ project })=>{
             y: e.clientY - rect.top
         });
     };
-    // Helper function to check if project is less than a month old
     const isNewProject = (dateString)=>{
         if (!dateString) return false;
         try {
@@ -2974,15 +2973,15 @@ const ProjectCard = ({ project })=>{
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "pointer-events-none absolute -inset-px rounded-xl opacity-0 transition duration-300 group-hover:opacity-100",
                 style: {
-                    background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(239, 68, 68, 0.1), transparent 40%)`
+                    background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(37, 99, 235, 0.12), transparent 40%)`
                 }
             }, void 0, false, {
                 fileName: "[project]/src/app/components/projects/project-card.tsx",
-                lineNumber: 60,
+                lineNumber: 59,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
-                className: "relative flex flex-col h-full justify-between border border-white/10 bg-[#050505]/20 backdrop-blur-xl rounded-2xl shadow-2xl overflow-hidden transition-all duration-500 hover:border-red-600/50 hover:shadow-red-600/10",
+                className: "relative flex flex-col h-full justify-between border border-white/10 bg-[#050505]/20 backdrop-blur-xl rounded-2xl shadow-2xl overflow-hidden transition-all duration-500 hover:border-blue-600/40 hover:shadow-blue-600/10",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex-1",
@@ -3002,7 +3001,7 @@ const ProjectCard = ({ project })=>{
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/projects/project-card.tsx",
-                                        lineNumber: 71,
+                                        lineNumber: 70,
                                         columnNumber: 15
                                     }, this) : firstImage ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                         src: firstImage,
@@ -3012,7 +3011,7 @@ const ProjectCard = ({ project })=>{
                                         className: "w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/projects/project-card.tsx",
-                                        lineNumber: 83,
+                                        lineNumber: 82,
                                         columnNumber: 15
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "w-full h-full bg-slate-900 flex items-center justify-center",
@@ -3021,29 +3020,29 @@ const ProjectCard = ({ project })=>{
                                             children: project.name
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/projects/project-card.tsx",
-                                            lineNumber: 92,
+                                            lineNumber: 91,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/projects/project-card.tsx",
-                                        lineNumber: 91,
+                                        lineNumber: 90,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "absolute inset-0 bg-gradient-to-t from-[#050505] to-transparent opacity-80"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/projects/project-card.tsx",
-                                        lineNumber: 97,
+                                        lineNumber: 96,
                                         columnNumber: 13
                                     }, this),
                                     isNewProject(project.date) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "absolute top-4 right-4 bg-gradient-to-r from-red-600 to-red-900 text-white px-3 py-1 rounded-full flex items-center gap-1.5 shadow-lg animate-pulse z-10 border border-white/10",
+                                        className: "absolute top-4 right-4 bg-gradient-to-r from-blue-600 to-blue-900 text-white px-3 py-1 rounded-full flex items-center gap-1.5 shadow-lg animate-pulse z-10 border border-white/10",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
                                                 className: "w-3 h-3 text-white"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/projects/project-card.tsx",
-                                                lineNumber: 101,
+                                                lineNumber: 100,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3051,19 +3050,19 @@ const ProjectCard = ({ project })=>{
                                                 children: "NEW"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/projects/project-card.tsx",
-                                                lineNumber: 102,
+                                                lineNumber: 101,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/projects/project-card.tsx",
-                                        lineNumber: 100,
+                                        lineNumber: 99,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/projects/project-card.tsx",
-                                lineNumber: 69,
+                                lineNumber: 68,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
@@ -3072,30 +3071,30 @@ const ProjectCard = ({ project })=>{
                                     href: `/projects/${project.id}`,
                                     className: "group/title inline-block",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
-                                        className: "text-2xl font-bold text-white group-hover/title:text-red-500 transition-colors flex items-center gap-2 tracking-tight",
+                                        className: "text-2xl font-bold text-white group-hover/title:text-blue-500 transition-colors flex items-center gap-2 tracking-tight",
                                         children: [
                                             project.name,
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__["ExternalLink"], {
-                                                className: "w-4 h-4 opacity-0 -translate-y-1 translate-x-1 group-hover/title:opacity-100 group-hover/title:translate-y-0 group-hover/title:translate-x-0 transition-all text-red-500"
+                                                className: "w-4 h-4 opacity-0 -translate-y-1 translate-x-1 group-hover/title:opacity-100 group-hover/title:translate-y-0 group-hover/title:translate-x-0 transition-all text-blue-500"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/projects/project-card.tsx",
-                                                lineNumber: 116,
+                                                lineNumber: 115,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/components/projects/project-card.tsx",
-                                        lineNumber: 114,
+                                        lineNumber: 113,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/projects/project-card.tsx",
-                                    lineNumber: 110,
+                                    lineNumber: 109,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/projects/project-card.tsx",
-                                lineNumber: 109,
+                                lineNumber: 108,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -3106,14 +3105,14 @@ const ProjectCard = ({ project })=>{
                                         children: project.description
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/projects/project-card.tsx",
-                                        lineNumber: 122,
+                                        lineNumber: 121,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex flex-wrap gap-2",
                                         children: [
                                             visibleTools.map((tool, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "px-3 py-1 text-[11px] font-bold bg-white/5 border border-white/10 text-slate-400 rounded-lg hover:bg-red-500/10 hover:border-red-500/30 hover:text-red-500 transition-all duration-300",
+                                                    className: "px-3 py-1 text-[11px] font-bold bg-white/5 border border-white/10 text-slate-400 rounded-lg hover:bg-blue-500/10 hover:border-blue-500/30 hover:text-blue-400 transition-all duration-300",
                                                     children: tool
                                                 }, index, false, {
                                                     fileName: "[project]/src/app/components/projects/project-card.tsx",
@@ -3125,17 +3124,17 @@ const ProjectCard = ({ project })=>{
                                                     e.preventDefault();
                                                     setShowAllTags(!showAllTags);
                                                 },
-                                                className: "flex items-center gap-1 text-red-500 hover:text-red-400 text-[11px] font-black transition-colors pl-1 uppercase tracking-widest",
+                                                className: "flex items-center gap-1 text-blue-500 hover:text-blue-400 text-[11px] font-black transition-colors pl-1 uppercase tracking-widest",
                                                 children: showAllTags ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$up$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronUp$3e$__["ChevronUp"], {
                                                     className: "w-3 h-3"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/projects/project-card.tsx",
-                                                    lineNumber: 143,
+                                                    lineNumber: 144,
                                                     columnNumber: 21
                                                 }, this) : `+${project.tools.length - maxVisibleTags}`
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/projects/project-card.tsx",
-                                                lineNumber: 135,
+                                                lineNumber: 136,
                                                 columnNumber: 17
                                             }, this)
                                         ]
@@ -3147,13 +3146,13 @@ const ProjectCard = ({ project })=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/projects/project-card.tsx",
-                                lineNumber: 121,
+                                lineNumber: 120,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/projects/project-card.tsx",
-                        lineNumber: 68,
+                        lineNumber: 67,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardFooter"], {
@@ -3164,26 +3163,26 @@ const ProjectCard = ({ project })=>{
                                 target: "_blank",
                                 className: "flex-1",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                                    className: `w-full h-11 rounded-xl text-xs font-bold uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2 border border-white/10 ${project.demo ? "bg-white/5 hover:bg-red-600 text-white hover:border-red-500 shadow-xl hover:shadow-red-600/20" : "bg-white/2 text-slate-800 cursor-not-allowed border-none"}`,
+                                    className: `w-full h-11 rounded-xl text-xs font-bold uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2 border border-white/10 ${project.demo ? "bg-white/5 hover:bg-blue-600 text-white hover:border-blue-500 shadow-xl hover:shadow-blue-600/20" : "bg-white/2 text-slate-800 cursor-not-allowed border-none"}`,
                                     disabled: !project.demo,
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$globe$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Globe$3e$__["Globe"], {
                                             className: "w-4 h-4"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/projects/project-card.tsx",
-                                            lineNumber: 163,
+                                            lineNumber: 164,
                                             columnNumber: 15
                                         }, this),
                                         "Live Demo"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/components/projects/project-card.tsx",
-                                    lineNumber: 155,
+                                    lineNumber: 156,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/projects/project-card.tsx",
-                                lineNumber: 154,
+                                lineNumber: 155,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -3191,44 +3190,44 @@ const ProjectCard = ({ project })=>{
                                 target: "_blank",
                                 className: "flex-1",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                                    className: `w-full h-11 rounded-xl text-xs font-bold uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2 border border-white/10 ${project.code ? "bg-white/5 hover:bg-red-950 text-white hover:border-red-800 shadow-xl hover:shadow-red-950/20" : "bg-white/2 text-slate-800 cursor-not-allowed border-none"}`,
+                                    className: `w-full h-11 rounded-xl text-xs font-bold uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2 border border-white/10 ${project.code ? "bg-white/5 hover:bg-blue-950 text-white hover:border-blue-800 shadow-xl hover:shadow-blue-950/20" : "bg-white/2 text-slate-800 cursor-not-allowed border-none"}`,
                                     disabled: !project.code,
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$code$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Code$3e$__["Code"], {
                                             className: "w-4 h-4"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/projects/project-card.tsx",
-                                            lineNumber: 176,
+                                            lineNumber: 178,
                                             columnNumber: 15
                                         }, this),
                                         "Source"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/components/projects/project-card.tsx",
-                                    lineNumber: 168,
+                                    lineNumber: 170,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/projects/project-card.tsx",
-                                lineNumber: 167,
+                                lineNumber: 169,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/projects/project-card.tsx",
-                        lineNumber: 153,
+                        lineNumber: 154,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/projects/project-card.tsx",
-                lineNumber: 67,
+                lineNumber: 66,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/components/projects/project-card.tsx",
-        lineNumber: 54,
+        lineNumber: 53,
         columnNumber: 5
     }, this);
 };

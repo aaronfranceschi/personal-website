@@ -8,7 +8,7 @@ function Experience() {
   return (
     <div
       id="experience"
-      className="relative z-50 py-16 lg:py-32 overflow-hidden"
+      className="relative z-50 py-12 lg:py-28 overflow-hidden"
     >
       {/* Decorative Background Blur */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-900/10 blur-[120px] rounded-full pointer-events-none" />

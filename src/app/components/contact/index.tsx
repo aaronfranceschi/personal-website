@@ -58,7 +58,7 @@ const ContactInfoCard = ({
 
 function ContactSection() {
   return (
-    <div id="contact" className="relative z-50 py-24 lg:py-48 overflow-hidden">
+    <div id="contact" className="relative z-50 py-16 lg:py-36 overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-blue-900/10 blur-[150px] rounded-full pointer-events-none" />
 

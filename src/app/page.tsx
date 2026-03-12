@@ -7,6 +7,7 @@ import Skills from "./components/skills/page";
 import SectionReveal from "./components/SectionReveal";
 
 import "./css/card.css";
+import Certifications from "./components/certification/page";
 export default function Home() {
   return (
     <>
@@ -23,6 +24,10 @@ export default function Home() {
 
         <SectionReveal>
           <Skills />
+        </SectionReveal>
+
+        <SectionReveal>
+          <Certifications />
         </SectionReveal>
 
         <SectionReveal>

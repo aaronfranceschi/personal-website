@@ -10,6 +10,7 @@ const navItems = [
   { label: "About", to: "about" },
   { label: "Experience", to: "experience" },
   { label: "Skills", to: "skills" },
+  { label: "Certifications", to: "certifications" }, // new item
   { label: "Projects", to: "projects" },
   { label: "Contact", to: "contact" },
 ];
@@ -81,13 +82,13 @@ const Navbar = () => {
             src={img}
             alt="Aaron Franceschi"
             width={isScrolled ? 80 : 90}
-            height={isScrolled ? 50 : 60}
+            height={isScrolled ? 50 : 60} // preserve original heights
             className="transition-all duration-500"
           />
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-8 h-[60px]">
           {navItems.map((item) => renderLink(item))}
         </div>
 

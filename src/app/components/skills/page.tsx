@@ -40,7 +40,7 @@ function Skills() {
   const secondHalf = skillsData.slice(Math.ceil(skillsData.length / 2));
 
   return (
-    <div id="skills" className="relative z-50 py-24 lg:py-48 overflow-hidden">
+    <div id="skills" className="relative z-50 py-12 lg:py-24 overflow-hidden">
       {/* Background Atmosphere */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-blue-900/10 blur-[150px] rounded-full pointer-events-none" />
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-950/10 blur-[120px] rounded-full pointer-events-none" />

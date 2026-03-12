@@ -36,7 +36,7 @@ export const experiences = [
   },
   {
     id: 4,
-    title: "AI & Full Stack Product Developer",
+    title: "AI & Full Stack Developer",
     company: "Independent / Freelance",
     duration: "Jan 2023 - Present",
     details: [
