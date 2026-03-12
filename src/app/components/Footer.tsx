@@ -15,8 +15,8 @@ const Footer = () => (
             <Image
               src="/logo.png"
               alt="Aaron Franceschi Logo"
-              width={100}
-              height={100}
+              width={120}
+              height={90}
               className="brightness-125"
             />
           </Link>
@@ -44,7 +44,7 @@ const Footer = () => (
                   to={item.to}
                   smooth
                   duration={500}
-                  className="text-gray-400 hover:text-red-500 transition-all cursor-pointer font-medium"
+                  className="text-gray-400 hover:text-blue-500 transition-all cursor-pointer font-medium"
                 >
                   {item.label}
                 </ScrollLink>
@@ -62,13 +62,13 @@ const Footer = () => (
             <div className="flex flex-col gap-3">
               <a
                 href={`mailto:${personalData.email}`}
-                className="text-gray-400 hover:text-red-500 transition-all font-medium"
+                className="text-gray-400 hover:text-blue-500 transition-all font-medium"
               >
                 {personalData.email}
               </a>
               <a
                 href={`tel:${personalData.phone}`}
-                className="text-gray-400 hover:text-red-500 transition-all font-medium"
+                className="text-gray-400 hover:text-blue-500 transition-all font-medium"
               >
                 {personalData.phone}
               </a>
@@ -79,28 +79,28 @@ const Footer = () => (
             <Link
               href={personalData.github}
               target="_blank"
-              className="p-2 rounded-lg bg-white/5 hover:bg-red-500/10 hover:text-red-500 transition-all border border-white/5"
+              className="p-2 rounded-lg bg-white/5 hover:bg-blue-500/10 hover:text-blue-500 transition-all border border-white/5"
             >
               <FaGithub size={20} />
             </Link>
             <Link
               href={personalData.linkedIn}
               target="_blank"
-              className="p-2 rounded-lg bg-white/5 hover:bg-red-500/10 hover:text-red-500 transition-all border border-white/5"
+              className="p-2 rounded-lg bg-white/5 hover:bg-blue-500/10 hover:text-blue-500 transition-all border border-white/5"
             >
               <FaLinkedin size={20} />
             </Link>
             <Link
               href={personalData.twitter}
               target="_blank"
-              className="p-2 rounded-lg bg-white/5 hover:bg-red-500/10 hover:text-red-500 transition-all border border-white/5"
+              className="p-2 rounded-lg bg-white/5 hover:bg-blue-500/10 hover:text-blue-500 transition-all border border-white/5"
             >
               <FaTwitter size={20} />
             </Link>
             <Link
               href={personalData.Instagram}
               target="_blank"
-              className="p-2 rounded-lg bg-white/5 hover:bg-red-500/10 hover:text-red-500 transition-all border border-white/5"
+              className="p-2 rounded-lg bg-white/5 hover:bg-blue-500/10 hover:text-blue-500 transition-all border border-white/5"
             >
               <FaInstagram size={20} />
             </Link>

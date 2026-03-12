@@ -34,7 +34,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
     });
   };
 
-  // Helper function to check if project is less than a month old
   const isNewProject = (dateString: string) => {
     if (!dateString) return false;
 
@@ -60,11 +59,11 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       <div
         className="pointer-events-none absolute -inset-px rounded-xl opacity-0 transition duration-300 group-hover:opacity-100"
         style={{
-          background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(239, 68, 68, 0.1), transparent 40%)`,
+          background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(37, 99, 235, 0.12), transparent 40%)`,
         }}
       />
 
-      <Card className="relative flex flex-col h-full justify-between border border-white/10 bg-[#050505]/20 backdrop-blur-xl rounded-2xl shadow-2xl overflow-hidden transition-all duration-500 hover:border-red-600/50 hover:shadow-red-600/10">
+      <Card className="relative flex flex-col h-full justify-between border border-white/10 bg-[#050505]/20 backdrop-blur-xl rounded-2xl shadow-2xl overflow-hidden transition-all duration-500 hover:border-blue-600/40 hover:shadow-blue-600/10">
         <div className="flex-1">
           <div className="relative overflow-hidden aspect-video">
             {project.videos?.[0] ? (
@@ -93,11 +92,11 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
               </div>
             )}
 
-            {/* Overlay Gradient */}
+            {/* Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-[#050505] to-transparent opacity-80" />
 
             {isNewProject(project.date) && (
-              <div className="absolute top-4 right-4 bg-gradient-to-r from-red-600 to-red-900 text-white px-3 py-1 rounded-full flex items-center gap-1.5 shadow-lg animate-pulse z-10 border border-white/10">
+              <div className="absolute top-4 right-4 bg-gradient-to-r from-blue-600 to-blue-900 text-white px-3 py-1 rounded-full flex items-center gap-1.5 shadow-lg animate-pulse z-10 border border-white/10">
                 <Sparkles className="w-3 h-3 text-white" />
                 <span className="text-[10px] font-bold tracking-wider">
                   NEW
@@ -111,9 +110,9 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
               href={`/projects/${project.id}`}
               className="group/title inline-block"
             >
-              <CardTitle className="text-2xl font-bold text-white group-hover/title:text-red-500 transition-colors flex items-center gap-2 tracking-tight">
+              <CardTitle className="text-2xl font-bold text-white group-hover/title:text-blue-500 transition-colors flex items-center gap-2 tracking-tight">
                 {project.name}
-                <ExternalLink className="w-4 h-4 opacity-0 -translate-y-1 translate-x-1 group-hover/title:opacity-100 group-hover/title:translate-y-0 group-hover/title:translate-x-0 transition-all text-red-500" />
+                <ExternalLink className="w-4 h-4 opacity-0 -translate-y-1 translate-x-1 group-hover/title:opacity-100 group-hover/title:translate-y-0 group-hover/title:translate-x-0 transition-all text-blue-500" />
               </CardTitle>
             </Link>
           </CardHeader>
@@ -122,22 +121,24 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             <p className="text-slate-400 line-clamp-2 text-sm mb-6 leading-relaxed font-medium italic">
               {project.description}
             </p>
+
             <div className="flex flex-wrap gap-2">
               {visibleTools.map((tool, index) => (
                 <span
                   key={index}
-                  className="px-3 py-1 text-[11px] font-bold bg-white/5 border border-white/10 text-slate-400 rounded-lg hover:bg-red-500/10 hover:border-red-500/30 hover:text-red-500 transition-all duration-300"
+                  className="px-3 py-1 text-[11px] font-bold bg-white/5 border border-white/10 text-slate-400 rounded-lg hover:bg-blue-500/10 hover:border-blue-500/30 hover:text-blue-400 transition-all duration-300"
                 >
                   {tool}
                 </span>
               ))}
+
               {hasMoreTags && (
                 <button
                   onClick={(e) => {
                     e.preventDefault();
                     setShowAllTags(!showAllTags);
                   }}
-                  className="flex items-center gap-1 text-red-500 hover:text-red-400 text-[11px] font-black transition-colors pl-1 uppercase tracking-widest"
+                  className="flex items-center gap-1 text-blue-500 hover:text-blue-400 text-[11px] font-black transition-colors pl-1 uppercase tracking-widest"
                 >
                   {showAllTags ? (
                     <ChevronUp className="w-3 h-3" />
@@ -155,7 +156,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             <Button
               className={`w-full h-11 rounded-xl text-xs font-bold uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2 border border-white/10 ${
                 project.demo
-                  ? "bg-white/5 hover:bg-red-600 text-white hover:border-red-500 shadow-xl hover:shadow-red-600/20"
+                  ? "bg-white/5 hover:bg-blue-600 text-white hover:border-blue-500 shadow-xl hover:shadow-blue-600/20"
                   : "bg-white/2 text-slate-800 cursor-not-allowed border-none"
               }`}
               disabled={!project.demo}
@@ -164,11 +165,12 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
               Live Demo
             </Button>
           </Link>
+
           <Link href={project.code || "#"} target="_blank" className="flex-1">
             <Button
               className={`w-full h-11 rounded-xl text-xs font-bold uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2 border border-white/10 ${
                 project.code
-                  ? "bg-white/5 hover:bg-red-950 text-white hover:border-red-800 shadow-xl hover:shadow-red-950/20"
+                  ? "bg-white/5 hover:bg-blue-950 text-white hover:border-blue-800 shadow-xl hover:shadow-blue-950/20"
                   : "bg-white/2 text-slate-800 cursor-not-allowed border-none"
               }`}
               disabled={!project.code}

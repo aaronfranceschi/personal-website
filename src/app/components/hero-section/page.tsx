@@ -24,7 +24,6 @@ const HeroSection = () => {
       const titles = personalData.designationAlternateWords;
       let index = 0;
 
-      // Initial Intro Animation
       const introTl = gsap.timeline();
       introTl
         .fromTo(
@@ -51,7 +50,6 @@ const HeroSection = () => {
           "-=1",
         );
 
-      // Designation Rotation Animation
       const runDesignationAnimation = () => {
         const el = designationRef.current;
         if (!el) return;
@@ -87,7 +85,6 @@ const HeroSection = () => {
 
       runDesignationAnimation();
 
-      // Floating animation for social icons
       gsap.to(".social-icon", {
         y: -5,
         duration: 2,
@@ -106,24 +103,24 @@ const HeroSection = () => {
       className="relative min-h-[90vh] flex flex-col items-center justify-center py-12 lg:py-24 overflow-hidden"
     >
       {/* Background Ambient Glows */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-red-600/10 blur-[120px] rounded-full animate-pulse" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-red-900/10 blur-[150px] rounded-full animate-pulse delay-700" />
+      <div className="absolute top-20 left-10 w-72 h-72 bg-blue-800/20 blur-[120px] rounded-full animate-pulse" />
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-900/20 blur-[150px] rounded-full animate-pulse delay-700" />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center px-4 md:px-8 relative z-10 w-full max-w-7xl mx-auto">
         {/* Left Side: Content */}
         <div className="order-2 lg:order-1 flex flex-col items-start gap-8">
           <div className="flex flex-col gap-4">
-            <span className="hero-tag px-4 py-1.5 rounded-full bg-red-500/10 border border-red-500/20 text-red-500 text-xs font-bold tracking-[0.3em] w-fit">
+            <span className="hero-tag px-4 py-1.5 rounded-full bg-blue-900/20 border border-blue-800/20 text-blue-500 text-xs font-bold tracking-[0.3em] w-fit">
               WELCOME TO MY UNIVERSE
             </span>
             <h1 className="hero-heading text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1]">
-              Crafting{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">
-                Digital
+              Creating{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-blue-800">
+                Impactful
               </span>
               <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-800 to-red-950">
-                Masterpieces
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-blue-900">
+                Software
               </span>
             </h1>
             <p className="hero-heading text-lg md:text-xl text-slate-400 max-w-xl leading-relaxed font-medium">
@@ -131,14 +128,13 @@ const HeroSection = () => {
               <span className="text-white font-bold">{personalData.name}</span>,
               a professional
               <span
-                className="text-red-500 ml-2 font-bold inline-block min-w-[200px]"
+                className="text-blue-500 ml-2 font-bold inline-block min-w-[200px]"
                 ref={designationRef}
               >
                 {personalData.designation}
               </span>
               <br />
-              dedicated to building high-performance, user-centric web
-              applications.
+              dedicated to building scalable, high-performance SaaS and AI applications for real users and real growth.
             </p>
           </div>
 
@@ -147,28 +143,28 @@ const HeroSection = () => {
               <Link
                 href={personalData.github}
                 target="_blank"
-                className="social-icon p-3 rounded-xl bg-white/5 border border-white/10 text-white hover:text-red-500 hover:border-red-500/50 transition-all duration-300 shadow-xl"
+                className="social-icon p-3 rounded-xl bg-white/5 border border-white/10 text-white hover:text-blue-400 hover:border-blue-700/50 transition-all duration-300 shadow-xl"
               >
                 <BsGithub size={24} />
               </Link>
               <Link
                 href={personalData.linkedIn}
                 target="_blank"
-                className="social-icon p-3 rounded-xl bg-white/5 border border-white/10 text-white hover:text-red-500 hover:border-red-500/50 transition-all duration-300 shadow-xl"
+                className="social-icon p-3 rounded-xl bg-white/5 border border-white/10 text-white hover:text-blue-400 hover:border-blue-700/50 transition-all duration-300 shadow-xl"
               >
                 <BsLinkedin size={24} />
               </Link>
               <Link
                 href={personalData.leetcode}
                 target="_blank"
-                className="social-icon p-3 rounded-xl bg-white/5 border border-white/10 text-white hover:text-red-500 hover:border-red-500/50 transition-all duration-300 shadow-xl"
+                className="social-icon p-3 rounded-xl bg-white/5 border border-white/10 text-white hover:text-blue-400 hover:border-blue-700/50 transition-all duration-300 shadow-xl"
               >
                 <SiLeetcode size={24} />
               </Link>
               <Link
                 href={personalData.twitter}
                 target="_blank"
-                className="social-icon p-3 rounded-xl bg-white/5 border border-white/10 text-white hover:text-red-500 hover:border-red-500/50 transition-all duration-300 shadow-xl"
+                className="social-icon p-3 rounded-xl bg-white/5 border border-white/10 text-white hover:text-blue-400 hover:border-blue-700/50 transition-all duration-300 shadow-xl"
               >
                 <FaTwitterSquare size={24} />
               </Link>
@@ -177,7 +173,7 @@ const HeroSection = () => {
             <div className="hero-cta flex flex-wrap gap-4">
               <Link
                 href="/#contact"
-                className="group relative px-8 py-4 rounded-2xl bg-gradient-to-r from-red-600 to-red-900 text-white font-bold uppercase tracking-wider overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(239,68,68,0.3)]"
+                className="group relative px-8 py-4 rounded-2xl bg-gradient-to-r from-blue-800 to-blue-900 text-white font-bold uppercase tracking-wider overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(30,58,138,0.3)]"
               >
                 <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
                 <span className="relative flex items-center gap-2">
@@ -188,10 +184,9 @@ const HeroSection = () => {
               <Link
                 href={personalData.resume}
                 target="_blank"
-                className="group px-8 py-4 rounded-2xl border border-white/10 bg-white/5 text-white font-bold uppercase tracking-wider transition-all hover:bg-white/10 hover:border-red-500/50 flex items-center gap-2"
+                className="group px-8 py-4 rounded-2xl border border-white/10 bg-white/5 text-white font-bold uppercase tracking-wider transition-all hover:bg-white/10 hover:border-blue-700/50 flex items-center gap-2"
               >
-                Get Resume{" "}
-                <MdDownload className="group-hover:translate-y-1 transition-transform" />
+                Get Resume <MdDownload className="group-hover:translate-y-1 transition-transform" />
               </Link>
             </div>
           </div>
@@ -210,15 +205,14 @@ const HeroSection = () => {
               ref={codeCardRef}
               className="relative rounded-3xl border border-white/10 bg-[#050505]/80 backdrop-blur-xl overflow-hidden shadow-2xl group"
             >
-              {/* Card Header */}
               <div className="flex items-center justify-between px-6 py-4 border-b border-white/5 bg-white/5">
                 <div className="flex gap-2">
-                  <div className="w-3 h-3 rounded-full bg-red-500" />
-                  <div className="w-3 h-3 rounded-full bg-red-400/50" />
-                  <div className="w-3 h-3 rounded-full bg-red-300/20" />
+                  <div className="w-3 h-3 rounded-full bg-blue-700" />
+                  <div className="w-3 h-3 rounded-full bg-blue-600/50" />
+                  <div className="w-3 h-3 rounded-full bg-blue-500/20" />
                 </div>
                 <div className="text-xs font-mono text-slate-500 flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
+                  <span className="w-2 h-2 rounded-full bg-blue-700 animate-pulse" />
                   Portfolio.ts
                 </div>
               </div>
@@ -228,7 +222,7 @@ const HeroSection = () => {
                   <div className="flex gap-4">
                     <span className="text-slate-600 italic">01</span>
                     <p>
-                      <span className="text-red-500">const</span>{" "}
+                      <span className="text-blue-500">const</span>{" "}
                       <span className="text-white">developer</span> = {"{"}
                     </p>
                   </div>
@@ -236,22 +230,22 @@ const HeroSection = () => {
                     <span className="text-slate-600 italic">02</span>
                     <p className="ml-4">
                       <span className="text-slate-200">name:</span>{" "}
-                      <span className="text-red-300">'Aaron Franceschi'</span>,
+                      <span className="text-blue-600">'Aaron Franceschi'</span>,
                     </p>
                   </div>
                   <div className="flex gap-4">
                     <span className="text-slate-600 italic">03</span>
                     <p className="ml-4">
                       <span className="text-slate-200">focus:</span>{" "}
-                      <span className="text-red-300">'Fullstack Mastery'</span>,
+                      <span className="text-blue-600">'Fullstack Mastery'</span>,
                     </p>
                   </div>
                   <div className="flex gap-4">
                     <span className="text-slate-600 italic">04</span>
                     <p className="ml-4">
                       <span className="text-slate-200">skills:</span> [
-                      <span className="text-red-300">
-                        'NextJS', 'GSAP', 'AI'
+                      <span className="text-blue-600">
+                        'Next.js', 'NestJS', 'FastAPI', 'Supabase', 'PostgreSQL', 'OpenAI'
                       </span>
                       ],
                     </p>
@@ -260,14 +254,14 @@ const HeroSection = () => {
                     <span className="text-slate-600 italic">05</span>
                     <p className="ml-4">
                       <span className="text-slate-200">passionate:</span>{" "}
-                      <span className="text-red-600">true</span>,
+                      <span className="text-blue-700">true</span>,
                     </p>
                   </div>
                   <div className="flex gap-4">
                     <span className="text-slate-600 italic">06</span>
                     <p className="ml-4">
                       <span className="text-slate-200">motto:</span>{" "}
-                      <span className="text-red-400">"Build with Purpose"</span>
+                      <span className="text-blue-600">"From Idea to Scalable Product"</span>
                     </p>
                   </div>
                   <div className="flex gap-4">
@@ -277,7 +271,7 @@ const HeroSection = () => {
                   <div className="flex gap-4 mt-4">
                     <span className="text-slate-600 italic">08</span>
                     <p>
-                      <span className="text-red-500">developer</span>.
+                      <span className="text-blue-500">developer</span>.
                       <span className="text-white">showcase</span>();
                     </p>
                   </div>

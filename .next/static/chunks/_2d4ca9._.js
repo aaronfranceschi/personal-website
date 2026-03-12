@@ -4,7 +4,7 @@
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: __turbopack_require_real__ } = __turbopack_context__;
 {
-__turbopack_export_value__("/_next/static/media/logo.226e25c4.png");}}),
+__turbopack_export_value__("/_next/static/media/logo.fb7c5d2c.png");}}),
 "[project]/public/logo.png.mjs { IMAGE => \"[project]/public/logo.png [app-client] (static)\" } [app-client] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -17,11 +17,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$logo$2e$png__$5b$a
 ;
 const __TURBOPACK__default__export__ = {
     src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$logo$2e$png__$5b$app$2d$client$5d$__$28$static$29$__["default"],
-    width: 512,
-    height: 512,
-    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAzklEQVR42k2POwuBARSGP4wWJVIWEYuUhGRSSpmUQkqRSxYlIbJYREwWIovIJaXEIlkUilIMkix2P+L1XfmGdzjneeq8hyBUng+h9oGLUOOHgAw9U4wPdc406p0FstUBxPoQs+egzBxDZ7RBrjbE+faCwZ39CxQsNkaYr0+IFtrYne5QO1KMQN10hSu4Pt6odxfoTbcYL/eQmqJMF8pSWBM4Xp6weUsoN2eYrA6I5FsQaQOMIDFGkKn0IbfE4QiW6ZJKe5LtwL75e40fkn0BuUt9YpZS1W8AAAAASUVORK5CYII=",
+    width: 410,
+    height: 114,
+    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAYAAABllJ3tAAAAPElEQVR42k3KLQ4AEAAGUPfQTMdMlGwmKO5/BcP8R18UXnuk9c1yGR44yI+a61LSxzGlTgsJImhwEBDEA0lEMI9wkJ0OAAAAAElFTkSuQmCC",
     blurWidth: 8,
-    blurHeight: 8
+    blurHeight: 2
 };
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
@@ -81,9 +81,7 @@ const Navbar = ()=>{
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Navbar.useEffect": ()=>{
             const handleScroll = {
-                "Navbar.useEffect.handleScroll": ()=>{
-                    setIsScrolled(window.scrollY > 50);
-                }
+                "Navbar.useEffect.handleScroll": ()=>setIsScrolled(window.scrollY > 50)
             }["Navbar.useEffect.handleScroll"];
             window.addEventListener("scroll", handleScroll);
             return ({
@@ -93,7 +91,6 @@ const Navbar = ()=>{
     }["Navbar.useEffect"], []);
     const renderLink = (item, isMobile = false)=>{
         const isHomePage = pathname === "/";
-        // Shared classes for both desktop and mobile
         const baseClasses = isMobile ? "block cursor-pointer py-3 text-lg font-semibold transition-all duration-300 border-b border-white/5" : "cursor-pointer transition-all duration-300 relative group px-2 py-1 text-sm lg:text-base font-medium";
         if (isHomePage) {
             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$scroll$2f$modules$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Link"], {
@@ -102,22 +99,22 @@ const Navbar = ()=>{
                 smooth: true,
                 offset: -80,
                 duration: 500,
-                activeClass: "text-red-500 !font-bold",
+                activeClass: "text-blue-500 !font-bold",
                 className: `${baseClasses} text-slate-300 hover:text-white`,
                 onClick: isMobile ? ()=>setIsMenuOpen(false) : undefined,
                 children: [
                     item.label,
                     !isMobile && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-red-600 to-red-900 transition-all duration-300 group-hover:w-full [.text-red-500_&]:w-full"
+                        className: "absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-blue-900 transition-all duration-300 group-hover:w-full"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Navbar.tsx",
-                        lineNumber: 56,
+                        lineNumber: 49,
                         columnNumber: 13
                     }, this)
                 ]
             }, item.to, true, {
                 fileName: "[project]/src/app/components/Navbar.tsx",
-                lineNumber: 43,
+                lineNumber: 36,
                 columnNumber: 9
             }, this);
         }
@@ -128,16 +125,16 @@ const Navbar = ()=>{
             children: [
                 item.label,
                 !isMobile && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-red-600 to-red-900 transition-all duration-300 group-hover:w-full"
+                    className: "absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-blue-900 transition-all duration-300 group-hover:w-full"
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/Navbar.tsx",
-                    lineNumber: 71,
+                    lineNumber: 64,
                     columnNumber: 11
                 }, this)
             ]
         }, item.to, true, {
             fileName: "[project]/src/app/components/Navbar.tsx",
-            lineNumber: 63,
+            lineNumber: 56,
             columnNumber: 7
         }, this);
     };
@@ -153,17 +150,17 @@ const Navbar = ()=>{
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$logo$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$public$2f$logo$2e$png__$5b$app$2d$client$5d$__$28$static$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
                             alt: "Aaron Franceschi",
-                            width: isScrolled ? 50 : 60,
+                            width: isScrolled ? 80 : 90,
                             height: isScrolled ? 50 : 60,
                             className: "transition-all duration-500"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Navbar.tsx",
-                            lineNumber: 90,
+                            lineNumber: 80,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Navbar.tsx",
-                        lineNumber: 86,
+                        lineNumber: 79,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -171,7 +168,7 @@ const Navbar = ()=>{
                         children: navItems.map((item)=>renderLink(item))
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Navbar.tsx",
-                        lineNumber: 100,
+                        lineNumber: 90,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -192,12 +189,12 @@ const Navbar = ()=>{
                                     d: "M6 18L18 6M6 6l12 12"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/Navbar.tsx",
-                                    lineNumber: 118,
+                                    lineNumber: 108,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/Navbar.tsx",
-                                lineNumber: 112,
+                                lineNumber: 102,
                                 columnNumber: 15
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                 className: "w-6 h-6",
@@ -211,28 +208,28 @@ const Navbar = ()=>{
                                     d: "M4 6h16M4 12h16m-7 6h7"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/Navbar.tsx",
-                                    lineNumber: 132,
+                                    lineNumber: 122,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/Navbar.tsx",
-                                lineNumber: 126,
+                                lineNumber: 116,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/Navbar.tsx",
-                            lineNumber: 106,
+                            lineNumber: 96,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/Navbar.tsx",
-                        lineNumber: 105,
+                        lineNumber: 95,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/Navbar.tsx",
-                lineNumber: 85,
+                lineNumber: 78,
                 columnNumber: 7
             }, this),
             isMenuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -242,18 +239,18 @@ const Navbar = ()=>{
                     children: navItems.map((item)=>renderLink(item, true))
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/Navbar.tsx",
-                    lineNumber: 147,
+                    lineNumber: 137,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/Navbar.tsx",
-                lineNumber: 146,
+                lineNumber: 136,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/components/Navbar.tsx",
-        lineNumber: 78,
+        lineNumber: 71,
         columnNumber: 5
     }, this);
 };
@@ -284,14 +281,12 @@ const personalData = {
     designation: "Full-Stack Web",
     designationAlternateWords: [
         "Developer.",
-        "Engineer.",
-        "Architect.",
         "Innovator.",
         "Designer."
     ],
-    description: "I’m Aaron Franceshci, a dedicated Full-Stack Developer specializing in TypeScript and crafting responsive, user‑centric interfaces with React and Next.js. I build full‑stack websites using Next.js and Prisma—leveraging Prisma’s type‑safe ORM to integrate robust database layers seamlessly into my applications. Passionate about continuous learning, I stay at the forefront of emerging technologies to deliver scalable, maintainable solutions that exceed expectations.",
-    email: "aaronfranceschi@gmail.com",
-    phone: "+1 (555) 123-4567",
+    description: "I'm Aaron Franceschi, an AI Product Developer specializing in TypeScript, Next.js, and NestJS. I design scalable SaaS and AI-powered applications with clean architecture and multi-tenant foundations. My work bridges frontend, backend, and AI integrations, leveraging FastAPI and Supabase to create production-ready systems built for real users and real growth. Passionate about delivering value, I focus on fast MVPs, smart architecture, and maintainable systems that evolve with your business.",
+    email: "aaronfranceschi1012@gmail.com",
+    phone: "+1 703 653 4959",
     address: "Las Vegas, NV, USA",
     github: "https://github.com/aaronfranceschi",
     facebook: "https://www.facebook.com/aaron.franceshci",
@@ -346,8 +341,8 @@ const Footer = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                         src: "/logo.png",
                                         alt: "Aaron Franceschi Logo",
-                                        width: 100,
-                                        height: 100,
+                                        width: 120,
+                                        height: 90,
                                         className: "brightness-125"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.tsx",
@@ -411,7 +406,7 @@ const Footer = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$
                                                 to: item.to,
                                                 smooth: true,
                                                 duration: 500,
-                                                className: "text-gray-400 hover:text-red-500 transition-all cursor-pointer font-medium",
+                                                className: "text-gray-400 hover:text-blue-500 transition-all cursor-pointer font-medium",
                                                 children: item.label
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/components/Footer.tsx",
@@ -452,7 +447,7 @@ const Footer = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                     href: `mailto:${__TURBOPACK__imported__module__$5b$project$5d2f$utils$2f$Data$2f$PersonalData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["personalData"].email}`,
-                                                    className: "text-gray-400 hover:text-red-500 transition-all font-medium",
+                                                    className: "text-gray-400 hover:text-blue-500 transition-all font-medium",
                                                     children: __TURBOPACK__imported__module__$5b$project$5d2f$utils$2f$Data$2f$PersonalData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["personalData"].email
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/Footer.tsx",
@@ -461,7 +456,7 @@ const Footer = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                     href: `tel:${__TURBOPACK__imported__module__$5b$project$5d2f$utils$2f$Data$2f$PersonalData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["personalData"].phone}`,
-                                                    className: "text-gray-400 hover:text-red-500 transition-all font-medium",
+                                                    className: "text-gray-400 hover:text-blue-500 transition-all font-medium",
                                                     children: __TURBOPACK__imported__module__$5b$project$5d2f$utils$2f$Data$2f$PersonalData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["personalData"].phone
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/components/Footer.tsx",
@@ -486,7 +481,7 @@ const Footer = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                             href: __TURBOPACK__imported__module__$5b$project$5d2f$utils$2f$Data$2f$PersonalData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["personalData"].github,
                                             target: "_blank",
-                                            className: "p-2 rounded-lg bg-white/5 hover:bg-red-500/10 hover:text-red-500 transition-all border border-white/5",
+                                            className: "p-2 rounded-lg bg-white/5 hover:bg-blue-500/10 hover:text-blue-500 transition-all border border-white/5",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaGithub"], {
                                                 size: 20
                                             }, void 0, false, {
@@ -502,7 +497,7 @@ const Footer = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                             href: __TURBOPACK__imported__module__$5b$project$5d2f$utils$2f$Data$2f$PersonalData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["personalData"].linkedIn,
                                             target: "_blank",
-                                            className: "p-2 rounded-lg bg-white/5 hover:bg-red-500/10 hover:text-red-500 transition-all border border-white/5",
+                                            className: "p-2 rounded-lg bg-white/5 hover:bg-blue-500/10 hover:text-blue-500 transition-all border border-white/5",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaLinkedin"], {
                                                 size: 20
                                             }, void 0, false, {
@@ -518,7 +513,7 @@ const Footer = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                             href: __TURBOPACK__imported__module__$5b$project$5d2f$utils$2f$Data$2f$PersonalData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["personalData"].twitter,
                                             target: "_blank",
-                                            className: "p-2 rounded-lg bg-white/5 hover:bg-red-500/10 hover:text-red-500 transition-all border border-white/5",
+                                            className: "p-2 rounded-lg bg-white/5 hover:bg-blue-500/10 hover:text-blue-500 transition-all border border-white/5",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaTwitter"], {
                                                 size: 20
                                             }, void 0, false, {
@@ -534,7 +529,7 @@ const Footer = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                             href: __TURBOPACK__imported__module__$5b$project$5d2f$utils$2f$Data$2f$PersonalData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["personalData"].Instagram,
                                             target: "_blank",
-                                            className: "p-2 rounded-lg bg-white/5 hover:bg-red-500/10 hover:text-red-500 transition-all border border-white/5",
+                                            className: "p-2 rounded-lg bg-white/5 hover:bg-blue-500/10 hover:text-blue-500 transition-all border border-white/5",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaInstagram"], {
                                                 size: 20
                                             }, void 0, false, {

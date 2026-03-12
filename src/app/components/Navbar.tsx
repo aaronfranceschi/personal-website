@@ -20,20 +20,13 @@ const Navbar = () => {
   const pathname = usePathname();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const renderLink = (
-    item: { label: string; to: string },
-    isMobile = false,
-  ) => {
+  const renderLink = (item: { label: string; to: string }, isMobile = false) => {
     const isHomePage = pathname === "/";
-
-    // Shared classes for both desktop and mobile
     const baseClasses = isMobile
       ? "block cursor-pointer py-3 text-lg font-semibold transition-all duration-300 border-b border-white/5"
       : "cursor-pointer transition-all duration-300 relative group px-2 py-1 text-sm lg:text-base font-medium";
@@ -43,17 +36,17 @@ const Navbar = () => {
         <ScrollLink
           key={item.to}
           to={item.to}
-          spy={true}
-          smooth={true}
+          spy
+          smooth
           offset={-80}
           duration={500}
-          activeClass="text-red-500 !font-bold"
+          activeClass="text-blue-500 !font-bold"
           className={`${baseClasses} text-slate-300 hover:text-white`}
           onClick={isMobile ? () => setIsMenuOpen(false) : undefined}
         >
           {item.label}
           {!isMobile && (
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-red-600 to-red-900 transition-all duration-300 group-hover:w-full [.text-red-500_&]:w-full" />
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-blue-900 transition-all duration-300 group-hover:w-full" />
           )}
         </ScrollLink>
       );
@@ -68,7 +61,7 @@ const Navbar = () => {
       >
         {item.label}
         {!isMobile && (
-          <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-red-600 to-red-900 transition-all duration-300 group-hover:w-full" />
+          <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-blue-900 transition-all duration-300 group-hover:w-full" />
         )}
       </Link>
     );
@@ -83,14 +76,11 @@ const Navbar = () => {
       }`}
     >
       <div className="container flex items-center justify-between mx-auto px-4 lg:px-8">
-        <Link
-          href="/"
-          className="transition-transform duration-300 hover:scale-105"
-        >
+        <Link href="/" className="transition-transform duration-300 hover:scale-105">
           <Image
             src={img}
             alt="Aaron Franceschi"
-            width={isScrolled ? 50 : 60}
+            width={isScrolled ? 80 : 90}
             height={isScrolled ? 50 : 60}
             className="transition-all duration-500"
           />

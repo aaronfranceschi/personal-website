@@ -50,29 +50,17 @@ const ContactWithoutCaptcha = () => {
 
     try {
       setIsLoading(true);
-      const res = await emailjs.send(
-        serviceID,
-        templateID,
-        templateParams,
-        options,
-      );
+      const res = await emailjs.send(serviceID, templateID, templateParams, options);
 
       if (res.status === 200) {
         toast.success("Message sent successfully!");
         setIsLoading(false);
-        setInput({
-          name: "",
-          email: "",
-          message: "",
-        });
+        setInput({ name: "", email: "", message: "" });
       }
     } catch (error: unknown) {
       setIsLoading(false);
-      if (error instanceof Error) {
-        toast.error(error.message);
-      } else {
-        toast.error("An unexpected error occurred.");
-      }
+      if (error instanceof Error) toast.error(error.message);
+      else toast.error("An unexpected error occurred.");
     }
   };
 
@@ -91,16 +79,16 @@ const ContactWithoutCaptcha = () => {
         <div className="flex flex-col gap-6">
           {/* Name Field */}
           <div className="flex flex-col gap-2 group/input">
-            <label className="text-sm font-bold text-slate-500 uppercase tracking-widest ml-1 flex items-center gap-2 group-focus-within/input:text-red-500 transition-colors">
+            <label className="text-sm font-bold text-slate-500 uppercase tracking-widest ml-1 flex items-center gap-2 group-focus-within/input:text-blue-500 transition-colors">
               <User className="w-4 h-4" />
               Your Name
             </label>
             <input
-              className="bg-white/5 w-full border border-white/10 rounded-2xl focus:border-red-500/50 focus:bg-white/10 ring-0 outline-0 transition-all duration-300 px-5 py-4 text-white placeholder:text-slate-600"
+              className="bg-white/5 w-full border border-white/10 rounded-2xl focus:border-blue-500/50 focus:bg-white/10 ring-0 outline-0 transition-all duration-300 px-5 py-4 text-white placeholder:text-slate-600"
               type="text"
               placeholder="John Doe"
               maxLength={100}
-              required={true}
+              required
               onChange={(e) => setInput({ ...input, name: e.target.value })}
               onBlur={checkRequired}
               value={input.name}
@@ -109,16 +97,20 @@ const ContactWithoutCaptcha = () => {
 
           {/* Email Field */}
           <div className="flex flex-col gap-2 group/input">
-            <label className="text-sm font-bold text-slate-500 uppercase tracking-widest ml-1 flex items-center gap-2 group-focus-within/input:text-red-500 transition-colors">
+            <label className="text-sm font-bold text-slate-500 uppercase tracking-widest ml-1 flex items-center gap-2 group-focus-within/input:text-blue-500 transition-colors">
               <Mail className="w-4 h-4" />
               Your Email
             </label>
             <input
-              className={`bg-white/5 w-full border rounded-2xl focus:bg-white/10 ring-0 outline-0 transition-all duration-300 px-5 py-4 text-white placeholder:text-slate-600 ${error.email ? "border-red-500/50" : "border-white/10 focus:border-red-500/50"}`}
+              className={`bg-white/5 w-full border rounded-2xl focus:bg-white/10 ring-0 outline-0 transition-all duration-300 px-5 py-4 text-white placeholder:text-slate-600 ${
+                error.email
+                  ? "border-blue-500/50"
+                  : "border-white/10 focus:border-blue-500/50"
+              }`}
               type="email"
               placeholder="john@example.com"
               maxLength={100}
-              required={true}
+              required
               value={input.email}
               onChange={(e) => setInput({ ...input, email: e.target.value })}
               onBlur={() => {
@@ -127,7 +119,7 @@ const ContactWithoutCaptcha = () => {
               }}
             />
             {error.email && (
-              <p className="text-xs text-red-500 ml-1">
+              <p className="text-xs text-blue-500 ml-1">
                 Please provide a valid email address.
               </p>
             )}
@@ -135,16 +127,15 @@ const ContactWithoutCaptcha = () => {
 
           {/* Message Field */}
           <div className="flex flex-col gap-2 group/input">
-            <label className="text-sm font-bold text-slate-500 uppercase tracking-widest ml-1 flex items-center gap-2 group-focus-within/input:text-red-500 transition-colors">
+            <label className="text-sm font-bold text-slate-500 uppercase tracking-widest ml-1 flex items-center gap-2 group-focus-within/input:text-blue-500 transition-colors">
               <MessageSquare className="w-4 h-4" />
               Your Message
             </label>
             <textarea
-              className="bg-white/5 w-full border border-white/10 rounded-2xl focus:border-red-500/50 focus:bg-white/10 ring-0 outline-0 transition-all duration-300 px-5 py-4 text-white placeholder:text-slate-600 resize-none"
+              className="bg-white/5 w-full border border-white/10 rounded-2xl focus:border-blue-500/50 focus:bg-white/10 ring-0 outline-0 transition-all duration-300 px-5 py-4 text-white placeholder:text-slate-600 resize-none"
               placeholder="Tell me about your project..."
               maxLength={500}
-              name="message"
-              required={true}
+              required
               onChange={(e) => setInput({ ...input, message: e.target.value })}
               onBlur={checkRequired}
               rows={4}
@@ -154,13 +145,13 @@ const ContactWithoutCaptcha = () => {
 
           <div className="flex flex-col gap-4 mt-2">
             {error.required && (
-              <p className="text-sm text-red-500 text-center font-medium">
+              <p className="text-sm text-blue-500 text-center font-medium">
                 Oops! Looks like some fields are still empty.
               </p>
             )}
 
             <button
-              className="relative group/btn overflow-hidden rounded-2xl bg-gradient-to-r from-red-600 to-red-900 p-[1px] transition-all hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50"
+              className="relative group/btn overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 to-blue-900 p-[1px] transition-all hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50"
               onClick={handleSendMail}
               disabled={isLoading}
             >
@@ -180,7 +171,7 @@ const ContactWithoutCaptcha = () => {
       </div>
 
       {/* Decorative Accent */}
-      <div className="absolute w-1 h-20 bg-gradient-to-b from-red-600 to-transparent left-0 top-20 rounded-full" />
+      <div className="absolute w-1 h-20 bg-gradient-to-b from-blue-600 to-transparent left-0 top-20 rounded-full" />
     </div>
   );
 };

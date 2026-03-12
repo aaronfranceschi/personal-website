@@ -17,103 +17,100 @@ import {
   SiCanva,
   SiAdobeillustrator,
   SiAdobephotoshop,
+  SiPython,
+  SiFastapi,
+  SiNestjs,
+  SiSupabase,
+  SiPostgresql,
+  SiOpenai,
+  SiVercel,
+  SiDocker,
+  SiDjango,
   SiFreelancer,
 } from "react-icons/si";
 import { IconType } from "react-icons";
 
-export const getSkillIcon = (skill: string): IconType => {
-  const skillLower = skill.toLowerCase();
+// Skill → Icon mapping
+const skillIcons: Record<string, IconType> = {
+  html: SiHtml5,
+  css: SiCss3,
+  javascript: SiJavascript,
+  js: SiJavascript,
+  typescript: SiTypescript,
+  ts: SiTypescript,
+  react: SiReact,
+  "next js": SiNextdotjs,
+  nextjs: SiNextdotjs,
+  "next.js": SiNextdotjs,
+  tailwind: SiTailwindcss,
+  tailwindcss: SiTailwindcss,
+  "node js": SiNodedotjs,
+  nodejs: SiNodedotjs,
+  "node.js": SiNodedotjs,
+  mongodb: SiMongodb,
+  mysql: SiMysql,
+  firebase: SiFirebase,
+  git: SiGit,
+  figma: SiFigma,
+  bootstrap: SiBootstrap,
+  materialui: SiMui,
+  mui: SiMui,
+  canva: SiCanva,
+  illustrator: SiAdobeillustrator,
+  photoshop: SiAdobephotoshop,
+  python: SiPython,
+  fastapi: SiFastapi,
+  nestjs: SiNestjs,
+  supabase: SiSupabase,
+  postgresql: SiPostgresql,
+  openai: SiOpenai,
+  django: SiDjango,
+  vercel: SiVercel,
+  docker: SiDocker,
+};
 
-  switch (skillLower) {
-    case "html":
-      return SiHtml5;
-    case "css":
-      return SiCss3;
-    case "javascript":
-      return SiJavascript;
-    case "js":
-      return SiJavascript;
-    case "typescript":
-      return SiTypescript;
-    case "ts":
-      return SiTypescript;
-    case "react":
-      return SiReact;
-    case "next js":
-    case "nextjs":
-    case "next.js":
-      return SiNextdotjs;
-    case "tailwind":
-    case "tailwindcss":
-      return SiTailwindcss;
-    case "node js":
-    case "nodejs":
-    case "node.js":
-      return SiNodedotjs;
-    case "mongodb":
-      return SiMongodb;
-    case "mysql":
-      return SiMysql;
-    case "firebase":
-      return SiFirebase;
-    case "git":
-      return SiGit;
-    case "figma":
-      return SiFigma;
-    case "bootstrap":
-      return SiBootstrap;
-    case "materialui":
-    case "mui":
-      return SiMui;
-    case "canva":
-      return SiCanva;
-    case "illustrator":
-      return SiAdobeillustrator;
-    case "photoshop":
-      return SiAdobephotoshop;
-    default:
-      return SiFreelancer; // Fallback icon
-  }
+// Skill → Brand Color mapping
+const skillColors: Record<string, string> = {
+  html: "#E34F26",
+  css: "#1572B6",
+  javascript: "#F7DF1E",
+  typescript: "#3178C6",
+  react: "#61DAFB",
+  "next js": "#000000",
+  nextjs: "#000000",
+  tailwind: "#38B2AC",
+  tailwindcss: "#38B2AC",
+  "node js": "#339933",
+  nodejs: "#339933",
+  "node.js": "#339933",
+  mongodb: "#47A248",
+  mysql: "#4479A1",
+  firebase: "#FFCA28",
+  git: "#F05032",
+  figma: "#F24E1E",
+  bootstrap: "#7952B3",
+  materialui: "#0081CB",
+  mui: "#0081CB",
+  canva: "#00C4CC",
+  illustrator: "#FF9A00",
+  photoshop: "#31A8FF",
+  python: "#3776AB",
+  fastapi: "#009688",
+  nestjs: "#E0234E",
+  supabase: "#3ECF8E",
+  postgresql: "#336791",
+  openai: "#412991",
+  django: "#092E20",
+  vercel: "#000000",
+  docker: "#2496ED",
+};
+
+export const getSkillIcon = (skill: string): IconType => {
+  const key = skill.toLowerCase();
+  return skillIcons[key] || SiFreelancer;
 };
 
 export const getSkillColor = (skill: string): string => {
-  const skillLower = skill.toLowerCase();
-  switch (skillLower) {
-    case "html":
-      return "#ef4444"; // Red-500
-    case "css":
-      return "#dc2626"; // Red-600
-    case "javascript":
-      return "#b91c1c"; // Red-700
-    case "typescript":
-      return "#ef4444"; // Red-500
-    case "react":
-      return "#dc2626"; // Red-600
-    case "next js":
-    case "nextjs":
-    case "next.js":
-      return "#ffffff"; // Keep white for contrast
-    case "tailwind":
-      return "#991b1b"; // Red-800
-    case "node js":
-    case "nodejs":
-      return "#b91c1c"; // Red-700
-    case "mongodb":
-      return "#7f1d1d"; // Red-900
-    case "mysql":
-      return "#991b1b"; // Red-800
-    case "firebase":
-      return "#ef4444"; // Red-500
-    case "git":
-      return "#dc2626"; // Red-600
-    case "figma":
-      return "#b91c1c"; // Red-700
-    case "bootstrap":
-      return "#991b1b"; // Red-800
-    case "materialui":
-    case "mui":
-      return "#ef4444"; // Red-500
-    default:
-      return "#ef4444"; // Default Red
-  }
+  const key = skill.toLowerCase();
+  return skillColors[key] || "#6B7280"; // Default gray if unknown
 };
