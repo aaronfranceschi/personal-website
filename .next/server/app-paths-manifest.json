@@ -1,14 +1,6 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/manifest.webmanifest/route": "app/manifest.webmanifest/route.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/components/about/page": "app/components/about/page.js",
-  "/components/experience/page": "app/components/experience/page.js",
-  "/components/skills/page": "app/components/skills/page.js",
-  "/components/hero-section/page": "app/components/hero-section/page.js",
   "/page": "app/page.js",
-  "/projects/[id]/page": "app/projects/[id]/page.js",
-  "/projects/page": "app/projects/page.js",
-  "/components/education/page": "app/components/education/page.js",
-  "/components/certification/page": "app/components/certification/page.js"
+  "/manifest.webmanifest/route": "app/manifest.webmanifest/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }
