@@ -36,8 +36,9 @@ const Footer = () => (
               { label: "About", to: "about" },
               { label: "Experience", to: "experience" },
               { label: "Skills", to: "skills" },
+              { label: "Certifications", to: "certifications" },
               { label: "Projects", to: "projects" },
-              { label: "Contact", to: "contact" },
+              // { label: "Contact", to: "contact" },
             ].map((item) => (
               <li key={item.to}>
                 <ScrollLink
@@ -65,12 +66,6 @@ const Footer = () => (
                 className="text-gray-400 hover:text-blue-500 transition-all font-medium"
               >
                 {personalData.email}
-              </a>
-              <a
-                href={`tel:${personalData.phone}`}
-                className="text-gray-400 hover:text-blue-500 transition-all font-medium"
-              >
-                {personalData.phone}
               </a>
             </div>
           </div>

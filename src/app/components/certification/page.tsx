@@ -49,7 +49,7 @@ const CertificationItem = ({ cert }: { cert: Certification }) => {
           {cert.details.map((item, index) => (
             <p
               key={index}
-              className="text-xs text-slate-400 leading-relaxed line-clamp-3"
+              className="text-xs text-slate-400 leading-relaxed line-clamp-5"
             >
               {item}
             </p>

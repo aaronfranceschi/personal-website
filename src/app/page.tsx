@@ -34,9 +34,9 @@ export default function Home() {
           <Projects />
         </SectionReveal>
 
-        <SectionReveal>
+        {/* <SectionReveal>
           <Contact />
-        </SectionReveal>
+        </SectionReveal> */}
       </div>
     </>
   );

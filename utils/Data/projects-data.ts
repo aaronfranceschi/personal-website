@@ -1,240 +1,228 @@
 export const projectsData = [
   {
-    id: 1,
-    name: "Docs-now",
+    id: "4a8b9c7d1e2f3a4b",
+    name: "Pixley AI - Personalized Kids Cartoons",
     description:
-      "An AI-powered SaaS application that enables intelligent conversations with PDF documents. Built with Next.js 15, TypeScript, and advanced AI technologies including OpenAI, LangChain, and Pinecone vector database. Features include real-time streaming responses, semantic search, secure authentication via Kinde, subscription management with Stripe, and a comprehensive dashboard for document management. The application uses tRPC for type-safe APIs, Prisma for database management, and UploadThing for seamless file uploads.",
+      "A generative AI platform that transforms kids' drawings, photos, or story ideas into fully animated personalized cartoon episodes. Backend AI logic is powered by OpenAI/Generative AI models, while the Full-Stack is built with Next.js and React. Integrations allow real-time story generation, animation rendering, and parent-guided customization.",
     tools: [
-      "Next.js 15",
-      "TypeScript",
+      "Next.js",
+      "React",
+      "OpenAI API",
+      "Node.js",
+      "Python",
+      "FFmpeg",
       "Tailwind CSS",
-      "Shadcn UI",
-      "tRPC",
-      "Prisma",
-      "TanStack Query",
-      "React Hook Form",
-      "Zod",
-      "OpenAI",
-      "Pinecone",
-      "Kinde Auth",
-      "UploadThing",
-      "Stripe",
+      "n8n"
     ],
     role: "Full-stack Developer",
     code: "",
-    demo: "https://docs-now.vercel.app",
-    date: "2025-10-14",
-    images: [
-      "/projects/docs-now/docs-now-landing.png",
-      "/projects/docs-now/Docs-now.png",
-      "/projects/docs-now/docs-now-chat.jpg",
-    ],
+    demo: "https://pixleyai.com/",
+    date: "2025",
+    images: ["/projects/PixleyAI/pixleyai.png"],
     videos: [""],
     highlights: [
-      "Implemented AI-powered chat using OpenAI GPT with streaming responses for real-time interactions. ",
-      "Integrated vector-based semantic search using Pinecone for accurate document understanding. ",
-      "Built type-safe end-to-end APIs with tRPC for enhanced developer experience. ",
-      "Designed subscription system with Stripe integration supporting Free and Pro plans. ",
-      "Developed comprehensive dashboard with PDF viewer and chat history management.",
+      "Built AI models to convert children's drawings and story prompts into animated episodes.",
+      "Developed an intuitive, kid-friendly UI for parents to guide story creation.",
+      "Integrated workflow automation for real-time episode generation."
     ],
-    challenges: [
-      "Implementing efficient vector embeddings and semantic search across large PDF documents.",
-      "Managing real-time streaming responses while maintaining context accuracy.",
-      "Integrating multiple third-party services (OpenAI, Pinecone, Stripe, Kinde) seamlessly.",
-      "Optimizing database queries and state management for handling multiple concurrent chats.",
+    challenge: [
+      "Generating animations that matched children's inputs accurately.",
+      "Handling large AI model processing while keeping the UI responsive.",
+      "Ensuring safe and child-appropriate content."
+    ],
+    solution: [
+      "Created a prompt validation system to ensure animations match the story idea.",
+      "Implemented async processing pipelines and queues to generate animations efficiently.",
+      "Added content moderation filters and safety checks for child-friendly output."
     ],
   },
   {
-    id: 2,
-    name: "Issue Tracker",
-    description:
-      "A comprehensive full-stack issue tracking application developed with Next.js 15, TypeScript, and Prisma/MySQL. Features include Google OAuth authentication via NextAuth, dynamic dashboards with chart visualizations, advanced filtering, pagination, and complete CRUD operations. Tailwind CSS and Radix UI were utilized for a responsive and accessible UI, while React Query ensured efficient data fetching and state management.",
-    tools: [
-      "Next.js 15",
-      "TypeScript",
-      "Prisma",
-      "Supabase",
-      "Tailwind CSS",
-      "NextAuth",
-      "React Query",
-      "Radix UI",
-    ],
-    role: "Full-stack Developer",
-    code: "https://github.com/Ghost-oo5/issue-tracker",
-    demo: "https://issuetracker005.vercel.app/",
-    date: "",
-    images: [
-      "/projects/issue-tracker/issue-tracker.png",
-      "/projects/issue-tracker/dashboard.png",
-      "/projects/issue-tracker/issues.png",
-    ],
-    videos: [""],
-    highlights: [
-      "Implemented secure user authentication with Google OAuth.",
-      "Designed interactive dashboards with real-time data visualization.",
-      "Optimized database queries for enhanced performance.",
-    ],
-    challenges: [
-      "Ensuring seamless integration of NextAuth with Prisma.",
-      "Managing complex state across multiple components.",
-    ],
-  },
-  {
-    id: 3,
-    name: "GameHub",
-    description:
-      "A dynamic game discovery platform built with React.js, integrating the RAWG API to fetch and display popular games. Features include search functionality, genre-based filtering, infinite scrolling, and a responsive design achieved with Tailwind CSS and Chakra UI. React Query and Axios were employed for efficient data fetching.",
-    tools: [
-      "React.js",
-      "Tailwind CSS",
-      "RAWG API",
-      "Chakra UI",
-      "React Query",
-      "Axios",
-      "react-infinite-scroller",
-    ],
-    role: "Frontend Developer",
-    code: "https://github.com/Ghost-oo5/game-hub",
-    demo: "https://gamehub-new.vercel.app/",
-    date: "",
-    images: ["/projects/gamehub/gamehub.png"],
-    videos: [""],
-    highlights: [
-      "Integrated external RAWG API for real-time game data.",
-      "Implemented infinite scrolling for enhanced user experience.",
-      "Designed responsive UI compatible with various devices.",
-    ],
-    challenges: [
-      "Handling API rate limits and data caching.",
-      "Ensuring smooth infinite scroll performance.",
-    ],
-  },
-  {
-    id: 4,
-    name: "AI Image Generator",
-    description:
-      "An AI-powered image generation and editing tool featuring prompt enhancement and a feedback loop. The backend is developed with FastAPI using the Google GenAI Python SDK, while the Full-Stack is built with Next.js and React. Additional tools like Pydantic, Pillow, and n8n were integrated to handle data validation, image processing, and workflow automation.",
-    tools: [
-      "FastAPI",
-      "Python",
-      "Google GenAI SDK",
-      "Pydantic",
-      "Pillow",
-      "n8n",
-      "Next.js",
-      "React",
-    ],
-    role: "Full-stack Developer",
-    code: "https://github.com/Ghost-oo5/Google-flash2.0-exp-image-server",
-    demo: "https://automation.alphabase.co/agents/image-generator/generate-image",
-    date: "",
-    images: ["/placeholder/placeholder.png"],
-    videos: ["/projects/AI-image-generator/AI-image-generator.mp4"],
-    highlights: [
-      "Developed AI models for image generation using Google's GenAI SDK.",
-      "Created intuitive UI for user-friendly interactions.",
-      "Integrated workflow automation with n8n.",
-    ],
-    challenges: [
-      "Ensuring prompt accuracy and relevance.",
-      "Managing asynchronous tasks and real-time feedback.",
-    ],
-  },
-  {
-    id: 5,
-    name: "JUHUU Marketplace",
-    description:
-      "A marketplace website developed for JUHUU’s IoT-based platform, showcasing a range of services and products. Built with React.js and styled using Tailwind CSS, the site offers a clean and responsive user interface.",
-    tools: ["React.js", "Tailwind CSS", "JavaScript"],
-    role: "Full-Stack Developer",
-    code: "https://github.com/Ghost-oo5/marketplace-juhuu-app",
-    demo: "https://marketplace-juhuu-app.vercel.app/",
-    date: "",
-    images: ["/projects/juhuu/marketplace-juhuu.png"],
-    videos: [""],
-    highlights: [
-      "Collaborated with design team to implement brand-consistent UI.",
-      "Optimized site for performance and SEO.",
-    ],
-    challenges: [
-      "Integrating various third-party services and APIs.",
-      "Ensuring cross-browser compatibility.",
-    ],
-  },
-  {
-    id: 6,
-    name: "JUHUU BikeBox Website",
-    description:
-      "A promotional website for JUHUU’s BikeBox product, offering secure bike storage solutions. Developed using HTML, CSS, and JavaScript, the site delivers essential product information and contact options.",
-    tools: ["HTML", "CSS", "JavaScript"],
-    role: "Frontend Developer",
-    code: "https://github.com/Ghost-oo5/Juhoo",
-    demo: "https://juhoo.vercel.app/",
-    date: "",
-    images: ["/projects/juhuu/juhoo.png"],
-    videos: [""],
-    highlights: [
-      "Designed engaging animations to showcase product features.",
-      "Implemented responsive design for mobile compatibility.",
-    ],
-    challenges: [
-      "Creating an engaging design with limited content.",
-      "Ensuring fast load times with rich media content.",
-    ],
-  },
-  {
-    id: 7,
-    name: "Rentistan",
-    description:
-      "A React Native rental management app designed to facilitate communication between tenants and property managers. Features include property listings, messaging, and user authentication, all backed by Firebase services. Expo and React Navigation were utilized for streamlined development and navigation.",
-    tools: [
-      "React Native",
-      "Expo",
-      "Firebase Auth",
-      "Firestore",
-      "React Navigation",
-    ],
-    role: "Full-stack Mobile Developer",
-    code: "https://github.com/Ghost-oo5/Rentistan--A-Rental-App-in-React-Native-via-Expo",
-    demo: "",
-    date: "",
-    images: ["/placeholder/placeholder.png"],
-    videos: [""],
-    highlights: [
-      "Implemented real-time chat functionality using Firestore.",
-      "Designed intuitive navigation for seamless user experience.",
-    ],
-    challenges: [
-      "Managing real-time data synchronization.",
-      "Ensuring app performance across various devices.",
-    ],
-  },
-  {
-    id: 8,
-    name: "Notion Table Clone",
-    description:
-      "A Notion-style editable task table featuring drag-and-drop functionality for columns and rows, tag inputs, persistent localStorage, and dark mode support. Built with React, TypeScript, and Vite, and styled using Chakra UI.",
-    tools: [
-      "React",
-      "TypeScript",
-      "Vite",
-      "Chakra UI",
-      "react-beautiful-dnd",
-      "localStorage",
-    ],
-    role: "Frontend Developer",
-    code: "https://github.com/Ghost-oo5/Notion-Table-Clone",
-    demo: "https://task-table-zeta.vercel.app/",
-    date: "",
-    images: ["/projects/tasktable/task-table.png"],
-    videos: [""],
-    highlights: [
-      "Implemented drag-and-drop functionality with react-beautiful-dnd.",
-      "Added dark mode support for better user accessibility.",
-    ],
-    challenges: [
-      "Maintaining state consistency during drag-and-drop operations.",
-      "Ensuring data persistence with localStorage.",
-    ],
-  },
+  id: "7c3f1a2b4e5d6f8a",
+  name: "EmpowerFit Online Fitness Platform",
+  description:
+    "A web platform for personalized fitness coaching, allowing clients to access live training sessions, track progress, and receive nutrition guidance. Built to improve client engagement and simplify trainer-client interactions with a responsive and user-friendly interface.",
+  tools: [
+    "Next.js",
+    "React",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Tailwind CSS",
+    "Stripe API",
+    "WebRTC"
+  ],
+  role: "Full-stack Developer",
+  code: "",
+  demo: "https://www.empowerfitllc.com/",
+  date: "2023",
+  images: ["/projects/EmpowerFit/empowerfitllc.png"],
+  videos: [""],
+  highlights: [
+    "Built a responsive web platform for live online fitness sessions and client management.",
+    "Integrated progress tracking dashboards for clients and trainers.",
+    "Implemented secure payment processing for subscription-based fitness programs."
+  ],
+  challenge: [
+    "Handling real-time video streaming for live online training sessions.",
+    "Ensuring secure user authentication and client data privacy.",
+    "Scaling the platform to handle multiple simultaneous live sessions."
+  ],
+  solution: [
+    "Used WebRTC and Socket.io for low-latency live video training sessions.",
+    "Implemented JWT-based authentication and encrypted client data storage.",
+    "Optimized backend APIs and database queries for concurrent session handling."
+  ]
+}
+,
+{
+  id: "cb9f2d7a1e4b6f8c",
+  name: "ChooseTheBest AI Tool Directory",
+  "description": "A web platform that curates and ranks AI tools across categories, helping users discover the most effective AI solutions for productivity, marketing, automation, and more. Designed to simplify AI tool exploration with a clean and user-friendly interface.",
+  "tools": [
+    "Python",
+    "Django",
+    "PostgreSQL",
+    "Leaflet.js",
+    "Bootstrap",
+    "REST APIs",
+    "Algolia Search API",
+  ],
+  "role": "Full-stack Developer",
+  "code": "",
+  "demo": "https://choosethebest.ai/",
+  "date": "2025",
+  "images": [
+    "/projects/ChooseTheBest/choosethebest-homepage.png"
+  ],
+  "videos": [""],
+  "highlights": [
+    "Built a responsive web directory for AI tool discovery and comparison.",
+    "Integrated searchable categories and ranking filters for better user experience.",
+    "Enabled easy access to AI tools with links and curated recommendations."
+  ],
+  "challenge": [
+    "Handling a large dataset of AI tools and keeping rankings updated.",
+    "Implementing fast and accurate search across multiple categories.",
+    "Ensuring the website is responsive and performs well on all devices."
+  ],
+  "solution": [
+    "Used Algolia for fast and relevant search results across the platform.",
+    "Structured data in MongoDB with automated scripts to update AI tool listings.",
+    "Optimized frontend with React and Tailwind CSS for performance and mobile responsiveness."
+  ]
+},
+
+{
+  id: "h7t4u2s1k9f0g8d3",
+  name: "FitGap AI Software Recommendation Platform",
+  description: "A business software recommendation platform that helps companies discover the most compatible tools (CRM, ERP, HR, analytics, AI, and more) based on their needs. Users take a quick quiz to receive tailored insights into software solutions across categories, simplifying software selection and comparison.",
+  tools: [
+    "Python",
+    "FastAPI",
+    "PostgreSQL",
+    "React",
+    "Tailwind CSS",
+    "OpenAI API "
+  ],
+  role: "Full-stack Developer",
+  code: "",
+  demo: "https://us.fitgap.com/",
+  date: "2025",
+  images: [
+    "/projects/FitGap/fitgap-homepage.png"
+  ],
+  videos: [""],
+  highlights: [
+    "Built a Python-based backend to handle AI-driven software recommendation logic.",
+    "Implemented quiz flow and dynamic results using FastAPI and PostgreSQL.",
+    "Designed a responsive frontend with React and Tailwind CSS for user-friendly interaction."
+  ],
+  challenge: [
+    "Mapping diverse business requirements to relevant software tools accurately.",
+    "Maintaining performance and responsiveness with multiple concurrent users.",
+    "Designing a backend logic that could scale as software categories expanded."
+  ],
+  solution: [
+    "Used Python with FastAPI for API endpoints and recommendation processing.",
+    "Implemented PostgreSQL with SQLAlchemy ORM for reliable, structured data storage.",
+    "Integrated AI logic via OpenAI API to analyze user quiz answers and generate tailored recommendations.",
+    "Optimized frontend with React and Tailwind CSS for smooth, responsive UI interactions."
+  ]
+}
+,
+{
+  "id": "f4d7b9c2a6e8g1h3",
+  "name": "Las Vegas Real Estate Portal",
+  "description": "A local real estate website providing property listings, market updates, and resources for buyers, sellers, and investors in the Las Vegas, Nevada area. Designed to simplify property searches and provide insights on the local housing market.",
+  "tools": [
+    "React",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Tailwind CSS",
+    "Google Maps API",
+    "MLS Integration",
+  ],
+  "role": "Full-stack Developer",
+  "code": "",
+  "demo": "https://www.lasvegasrealestate.org/",
+  "date": "2023",
+  "images": [
+    "/projects/LasVegasRealEstate/lasvegasrealestate-homepage.png"
+  ],
+  "videos": [""],
+  "highlights": [
+    "Built a responsive web platform for browsing Las Vegas property listings.",
+    "Integrated MLS data for real-time property updates and search.",
+    "Implemented interactive maps and filtering tools for a better user experience."
+  ],
+  "challenge": [
+    "Ensuring accurate and real-time integration with MLS property data.",
+    "Handling a large volume of property listings efficiently.",
+    "Making the platform mobile-friendly and responsive for all devices."
+  ],
+  "solution": [
+    "Used Node.js and MongoDB to manage property data and optimize queries.",
+    "Integrated Google Maps API for dynamic location-based searches.",
+    "Optimized frontend with React and Tailwind CSS for fast, responsive UI."
+  ]
+}
+,
+{
+  "id": "d2a8f6c9b1e3g4h5",
+  "name": "EarKick AI Mental Health Chat",
+  "description": "A web platform that provides AI-powered mental health support, offering users a conversational interface for stress management, mood tracking, and self-care guidance. Designed to make mental wellness accessible and easy through a responsive and interactive chat experience.",
+  "tools": [
+    "Python",
+    "FastAPI",
+    "Express.js",
+    "MongoDB",
+    "Tailwind CSS",
+    "OpenAI API",
+  ],
+  "role": "Full-stack Developer",
+  "code": "",
+  "demo": "https://chat.earkick.com/",
+  "date": "2026",
+  "images": [
+    "/projects/EarKick/earkick-chat-homepage.png"
+  ],
+  "videos": [""],
+  "highlights": [
+    "Built a responsive web chat platform for AI-driven mental health support.",
+    "Implemented conversational AI for stress, anxiety, and mood tracking.",
+    "Designed user-friendly interface for accessibility and ease of use."
+  ],
+  "challenge": [
+    "Maintaining privacy and security of sensitive mental health conversations.",
+    "Handling AI response generation with high relevance and empathy.",
+    "Scaling the platform to handle multiple concurrent users effectively."
+  ],
+  "solution": [
+    "Integrated OpenAI API for natural language conversational responses.",
+    "Implemented secure user session management and encrypted storage.",
+    "Optimized frontend performance with React and Tailwind CSS for responsive design."
+  ]
+}
+  // … repeat similarly for other projects
 ];

@@ -20,8 +20,8 @@ body {
 body {
   background-image: radial-gradient(
     circle at 50% -20%,
-    #040e21 0%,
-    #050505 80%
+    #000205 0%,
+    #000104 80%
   );
   background-repeat: no-repeat;
   background-size: cover;

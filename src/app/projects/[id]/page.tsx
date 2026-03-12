@@ -10,6 +10,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { log } from "console";
 import {
   Code,
   Globe,
@@ -29,7 +30,7 @@ type Props = {
 
 const ProjectDetails = async ({ params }: Props) => {
   const { id } = await params;
-  const project = projectsData.find((p) => p.id === parseInt(id));
+  const project = projectsData.find((p) => p.id === id);
 
   if (!project) {
     notFound();
@@ -95,7 +96,6 @@ const ProjectDetails = async ({ params }: Props) => {
               </p>
 
               <div className="flex flex-wrap gap-4 mt-4">
-
                 {project.demo && (
                   <Link href={project.demo} target="_blank">
                     <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg shadow-blue-600/20 transition-all hover:scale-105 active:scale-95 flex gap-2 font-bold uppercase tracking-widest">
@@ -116,7 +116,6 @@ const ProjectDetails = async ({ params }: Props) => {
                     </Button>
                   </Link>
                 )}
-
               </div>
             </div>
           </div>
@@ -129,43 +128,82 @@ const ProjectDetails = async ({ params }: Props) => {
           <div className="lg:col-span-2 flex flex-col gap-16">
 
             {/* Highlights */}
-            <section className="flex flex-col gap-8">
-
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center border border-blue-500/20">
-                  <ShieldCheck className="w-6 h-6 text-blue-400 shadow-[0_0_15px_rgba(59,130,246,0.5)]" />
+            {project.highlights && (
+              <section className="flex flex-col gap-8">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center border border-blue-500/20">
+                    <ShieldCheck className="w-6 h-6 text-blue-400 shadow-[0_0_15px_rgba(59,130,246,0.5)]" />
+                  </div>
+                  <h2 className="text-3xl font-black text-white">Project Highlights</h2>
                 </div>
-                <h2 className="text-3xl font-black text-white">
-                  Project Highlights
-                </h2>
-              </div>
+                <ul className="grid grid-cols-1 gap-4">
+                  {project.highlights.map((highlight, index) => (
+                    <li
+                      key={index}
+                      className="group p-6 rounded-2xl border border-white/5 bg-white/[0.02] hover:bg-blue-500/[0.03] hover:border-blue-500/20 transition-all duration-300 flex gap-4"
+                    >
+                      <div className="mt-1.5 w-2 h-2 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.8)] shrink-0 group-hover:scale-125 transition-transform" />
+                      <p className="text-slate-300 text-lg leading-relaxed font-medium">{highlight}</p>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
 
-              <ul className="grid grid-cols-1 gap-4">
-                {project.highlights?.map((highlight, index) => (
-                  <li
-                    key={index}
-                    className="group p-6 rounded-2xl border border-white/5 bg-white/[0.02] hover:bg-blue-500/[0.03] hover:border-blue-500/20 transition-all duration-300 flex gap-4"
-                  >
-                    <div className="mt-1.5 w-2 h-2 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.8)] shrink-0 group-hover:scale-125 transition-transform" />
-                    <p className="text-slate-300 text-lg leading-relaxed font-medium">
-                      {highlight}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-            </section>
+            {/* Challenge */}
+            {project.challenge && (
+              <section className="flex flex-col gap-8">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-red-500/10 flex items-center justify-center border border-red-500/20">
+                    <ShieldCheck className="w-6 h-6 text-red-400 shadow-[0_0_15px_rgba(239,68,68,0.5)]" />
+                  </div>
+                  <h2 className="text-3xl font-black text-white">Challenge</h2>
+                </div>
+                <ul className="grid grid-cols-1 gap-4">
+                  {project.challenge.map((challenge, index) => (
+                    <li
+                      key={index}
+                      className="group p-6 rounded-2xl border border-white/5 bg-white/[0.02] hover:bg-blue-500/[0.03] hover:border-blue-500/20 transition-all duration-300 flex gap-4"
+                    >
+                      <div className="mt-1.5 w-2 h-2 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.8)] shrink-0 group-hover:scale-125 transition-transform" />
+                      <p className="text-slate-300 text-lg leading-relaxed font-medium">{challenge}</p>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
+            {/* Solution */}
+            {project.solution && (
+              <section className="flex flex-col gap-8">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center border border-green-500/20">
+                    <ShieldCheck className="w-6 h-6 text-green-400 shadow-[0_0_15px_rgba(34,197,94,0.5)]" />
+                  </div>
+                  <h2 className="text-3xl font-black text-white">Solution</h2>
+                </div>
+                <ul className="grid grid-cols-1 gap-4">
+                  {project.solution.map((solution, index) => (
+                    <li
+                      key={index}
+                      className="group p-6 rounded-2xl border border-white/5 bg-white/[0.02] hover:bg-blue-500/[0.03] hover:border-blue-500/20 transition-all duration-300 flex gap-4"
+                    >
+                      <div className="mt-1.5 w-2 h-2 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.8)] shrink-0 group-hover:scale-125 transition-transform" />
+                      <p className="text-slate-300 text-lg leading-relaxed font-medium">{solution}</p>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
 
             {/* Gallery */}
             {project.images && project.images.length > 1 && (
               <section className="flex flex-col gap-8">
-
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-xl bg-blue-900/10 flex items-center justify-center border border-blue-900/20">
                     <Calendar className="w-6 h-6 text-blue-400" />
                   </div>
-                  <h2 className="text-3xl font-black text-white">
-                    Visual Showcase
-                  </h2>
+                  <h2 className="text-3xl font-black text-white">Visual Showcase</h2>
                 </div>
 
                 <Carousel className="w-full">
@@ -195,23 +233,17 @@ const ProjectDetails = async ({ params }: Props) => {
 
           {/* Sidebar */}
           <aside className="flex flex-col gap-8">
-
             <Card className="bg-[#050505]/20 border-white/10 rounded-3xl overflow-hidden sticky top-24 shadow-2xl">
               <CardContent className="p-8 flex flex-col gap-8">
 
                 {/* Tech */}
                 <div className="flex flex-col gap-6">
-
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-lg bg-blue-500/10 flex items-center justify-center">
                       <Cpu className="w-4 h-4 text-blue-400" />
                     </div>
-
-                    <h3 className="text-xl font-bold text-white tracking-tight">
-                      Technologies
-                    </h3>
+                    <h3 className="text-xl font-bold text-white tracking-tight">Technologies</h3>
                   </div>
-
                   <div className="flex flex-wrap gap-2">
                     {project.tools.map((tool, index) => (
                       <Badge
@@ -229,35 +261,21 @@ const ProjectDetails = async ({ params }: Props) => {
 
                 {/* Details */}
                 <div className="flex flex-col gap-6">
-
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-lg bg-blue-900/10 flex items-center justify-center">
                       <User className="w-4 h-4 text-blue-400" />
                     </div>
-
-                    <h3 className="text-xl font-bold text-white tracking-tight">
-                      Project Details
-                    </h3>
+                    <h3 className="text-xl font-bold text-white tracking-tight">Project Details</h3>
                   </div>
-
                   <div className="space-y-4">
-
                     <div className="flex justify-between items-center text-sm">
                       <span className="text-slate-500 font-medium">Role</span>
-                      <span className="text-slate-300 font-bold uppercase tracking-widest text-[10px] bg-white/5 px-2 py-1 rounded-md">
-                        {project.role}
-                      </span>
+                      <span className="text-slate-300 font-bold uppercase tracking-widest text-[10px] bg-white/5 px-2 py-1 rounded-md">{project.role}</span>
                     </div>
-
                     <div className="flex justify-between items-center text-sm">
-                      <span className="text-slate-500 font-medium">
-                        Completed
-                      </span>
-                      <span className="text-slate-300 font-bold">
-                        {project.date || "2024"}
-                      </span>
+                      <span className="text-slate-500 font-medium">Completed</span>
+                      <span className="text-slate-300 font-bold">{project.date || "2024"}</span>
                     </div>
-
                   </div>
                 </div>
 
@@ -266,47 +284,32 @@ const ProjectDetails = async ({ params }: Props) => {
                   <Link href="/#contact" className="w-full">
                     <Button className="w-full bg-blue-600/10 border border-blue-600/20 hover:bg-blue-600 hover:text-white py-6 rounded-xl text-blue-400 font-bold uppercase tracking-widest text-xs transition-all duration-300 group flex gap-2 overflow-hidden relative">
                       <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                      <span className="relative z-10 flex items-center justify-center gap-2 w-full">
-                        Discuss This Project
-                      </span>
+                      <span className="relative z-10 flex items-center justify-center gap-2 w-full">Discuss This Project</span>
                     </Button>
                   </Link>
                 </div>
 
               </CardContent>
             </Card>
-
           </aside>
         </div>
 
         {/* More Projects */}
         <div className="mt-32 pt-20 border-t border-white/5">
-
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-
             <div className="flex flex-col gap-4">
-              <h2 className="text-4xl lg:text-5xl font-black text-white tracking-tighter">
-                Explore More Work
-              </h2>
-              <p className="text-slate-400 text-lg font-medium">
-                Deep dive into other high-performance solutions.
-              </p>
+              <h2 className="text-4xl lg:text-5xl font-black text-white tracking-tighter">Explore More Work</h2>
+              <p className="text-slate-400 text-lg font-medium">Deep dive into other high-performance solutions.</p>
             </div>
-
             <Link
               href="/#projects"
               className="text-blue-400 font-black uppercase tracking-[0.2em] text-sm hover:text-blue-300 transition-colors flex items-center gap-2 group"
             >
               View Full Archive
-              <span className="group-hover:translate-x-1 transition-transform">
-                →
-              </span>
+              <span className="group-hover:translate-x-1 transition-transform">→</span>
             </Link>
-
           </div>
-
           <FeaturedProjects />
-
         </div>
       </div>
     </div>

@@ -80,7 +80,7 @@ function About() {
                 <Sparkles className="w-24 h-24 text-blue-500" />
               </div>
 
-              <div className="about-description text-slate-300 text-lg lg:text-xl leading-relaxed text-justify space-y-4 font-medium italic">
+              <div className="text-slate-300 text-lg lg:text-xl text-justify space-y-4 font-medium italic">
                 {personalData.description}
               </div>
 
@@ -97,7 +97,7 @@ function About() {
               </div>
               <div className="w-[1px] h-10 bg-white/10" />
               <div className="flex flex-col">
-                <span className="text-3xl font-black text-white">68+</span>
+                <span className="text-3xl font-black text-white">30+</span>
                 <span className="text-xs text-slate-500 uppercase tracking-widest font-bold">
                   Global Projects
                 </span>

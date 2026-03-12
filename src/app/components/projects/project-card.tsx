@@ -162,7 +162,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
               disabled={!project.demo}
             >
               <Globe className="w-4 h-4" />
-              Live Demo
+              Live URL
             </Button>
           </Link>
 

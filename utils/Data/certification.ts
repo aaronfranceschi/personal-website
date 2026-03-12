@@ -21,7 +21,7 @@ export const certifications = [
       "Covers object-oriented programming concepts, functions, and coding techniques for real-world Python applications.",
       "Validates ability to complete coding tasks, understand Python 3 syntax and semantics, and build maintainable Python code."
     ],
-    skills: ["Python", "Object-oriented Programming", "Algorithmic Thinking", "Functions", "Loops", "Conditional Execution"]
+    skills: ["Python", "Object-oriented Programming", "Algorithmic Thinking", "Functions", "Loops"]
   },
   {
     id: 3,
@@ -31,8 +31,7 @@ export const certifications = [
     details: [
       "Covers software engineering essentials, Node.js & Express server-side development, asynchronous programming, and CI/CD methodologies.",
       "Includes hands-on experience with Docker, Kubernetes, microservices, NoSQL databases, and cloud-native back-end applications.",
-      "Validates knowledge in web development, version control (Git/GitHub), application architecture, and building scalable back-end solutions."
     ],
-    skills: ["JavaScript", "Node.js", "Express", "Back-end Development", "Docker", "Kubernetes", "CI/CD", "NoSQL"]
+    skills: ["JavaScript", "Node.js", "Express", "Back-end Development", "Docker", "CI/CD"]
   }
 ];

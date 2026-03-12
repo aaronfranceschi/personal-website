@@ -111,13 +111,6 @@ function ContactSection() {
                     color="#2563eb"
                   />
                   <ContactInfoCard
-                    href={`tel:${personalData.phone}`}
-                    icon={IoMdCall}
-                    label="Phone"
-                    value={personalData.phone}
-                    color="#1e40af"
-                  />
-                  <ContactInfoCard
                     href="#"
                     icon={MapPin}
                     label="Location"
@@ -142,21 +135,6 @@ function ContactSection() {
                       href: personalData.linkedIn,
                       icon: BiLogoLinkedin,
                       color: "#0077b5",
-                    },
-                    {
-                      href: personalData.twitter,
-                      icon: FaXTwitter,
-                      color: "#1da1f2",
-                    },
-                    {
-                      href: personalData.stackOverflow,
-                      icon: FaStackOverflow,
-                      color: "#f48024",
-                    },
-                    {
-                      href: personalData.facebook,
-                      icon: FaFacebook,
-                      color: "#1877f2",
                     },
                   ].map((social, idx) => (
                     <Link

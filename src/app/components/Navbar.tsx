@@ -12,7 +12,7 @@ const navItems = [
   { label: "Skills", to: "skills" },
   { label: "Certifications", to: "certifications" }, // new item
   { label: "Projects", to: "projects" },
-  { label: "Contact", to: "contact" },
+  // { label: "Contact", to: "contact" },
 ];
 
 const Navbar = () => {
