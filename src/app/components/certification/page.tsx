@@ -4,8 +4,18 @@ import Marquee from "react-fast-marquee";
 import SectionReveal from "../SectionReveal";
 import Image from "next/image";
 
-const CertificationItem = ({ cert }: { cert: any }) => {
-  // Limit skills to max 5
+// Define the certification type
+interface Certification {
+  id: number;
+  title: string;
+  issuer: string;
+  image: string;
+  details: string[];
+  skills: string[];
+}
+
+// Use the type instead of `any`
+const CertificationItem = ({ cert }: { cert: Certification }) => {
   const displayedSkills = cert.skills.slice(0, 5);
   const extraSkills = cert.skills.length - displayedSkills.length;
 
@@ -36,7 +46,7 @@ const CertificationItem = ({ cert }: { cert: any }) => {
 
         {/* Description */}
         <div className="mt-4 flex-1 overflow-hidden">
-          {cert.details.map((item: string, index: number) => (
+          {cert.details.map((item, index) => (
             <p
               key={index}
               className="text-xs text-slate-400 leading-relaxed line-clamp-3"
@@ -48,7 +58,7 @@ const CertificationItem = ({ cert }: { cert: any }) => {
 
         {/* Skills */}
         <div className="flex flex-wrap gap-2 mt-3">
-          {displayedSkills.map((skill: string, index: number) => (
+          {displayedSkills.map((skill, index) => (
             <span
               key={index}
               className="text-[10px] px-3 py-1 rounded-full border border-blue-500/20 bg-blue-500/10 text-blue-400 uppercase tracking-wide"
@@ -111,8 +121,8 @@ function Certifications() {
         <div className="relative">
           <SectionReveal direction="up" delay={0.2}>
             <Marquee speed={35} gradient={false} pauseOnHover={true}>
-              {certifications.map((cert, index) => (
-                <CertificationItem key={index} cert={cert} />
+              {certifications.map((cert) => (
+                <CertificationItem key={cert.id} cert={cert} />
               ))}
             </Marquee>
           </SectionReveal>
