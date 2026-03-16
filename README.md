@@ -1,4 +1,4 @@
-# Arron Franceschi Portfolio
+# Aaron Franceschi Portfolio
 
 Welcome to my personal portfolio website! This site showcases my skills, projects, certifications, and experience as a developer. It's built with **Next.js**, **TypeScript**, and **Tailwind CSS**, featuring smooth scrolling, responsive design, and modern UI animations.
 
